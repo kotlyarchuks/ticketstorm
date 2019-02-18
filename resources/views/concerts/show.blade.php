@@ -14,33 +14,33 @@
 </head>
 <body>
     <div class="event">
-        <h2 class="event__header">The Red Chord</h2>
-        <h4 class="event__sub-header">with Animosity and Lethargy</h4>
+        <h2 class="event__header">{{ $concert->title }}</h2>
+        <h4 class="event__sub-header">{{ $concert->subtitle }}</h4>
         <div class="event__row">
             <div class="event__icon"><i class="far fa-calendar-alt"></i></div>
-            <div class="event__date">December 13, 2016</div>
+            <div class="event__date">{{ $concert->date->format('F j, Y') }}</div>
         </div>
         <div class="event__row">
             <div class="event__icon"><i class="far fa-clock"></i></div>
-            <div class="event__start">Doors at 8:00pm</div>
+            <div class="event__start">Doors at {{ $concert->date->format('g:ia') }}</div>
         </div>
         <div class="event__row">
             <div class="event__icon"><i class="fas fa-dollar-sign"></i></div>
-            <div class="event__price">32.50</div>
+            <div class="event__price">{{ number_format($concert->price/100, 2) }}</div>
         </div>
         <div class="event__row">
             <div class="event__icon"><i class="fas fa-map-marker-alt"></i></div>
             <div class="event__location">
-                <p>The Mosh Pit</p>
-                <p class="secondary-text">123 Example Lane</p>
-                <p class="secondary-text">Laraville, ON 17916</p>
+                <p>{{ $concert->location }}</p>
+                <p class="secondary-text">{{ $concert->street }}</p>
+                <p class="secondary-text">{{ $concert->city }}, {{ $concert->state }} {{ $concert->zip }}</p>
             </div>
         </div>
         <div class="event__row">
             <div class="event__icon"><i class="fas fa-info-circle"></i></div>
             <div class="event__info">
                 <p>Additional Information</p>
-                <p class="secondary-text">For tickets, call (555) 555-5555</p>
+                <p class="secondary-text">{{ $concert->additional_info }}</p>
             </div>
         </div>
     </div>

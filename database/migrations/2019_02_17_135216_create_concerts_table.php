@@ -18,14 +18,14 @@ class CreateConcertsTable extends Migration
             $table->timestamps();
             $table->string('title');
             $table->string('subtitle');
-            $table->date('date');
+            $table->dateTime('date');
             $table->integer('price');
             $table->string('location');
             $table->string('street');
             $table->string('city');
             $table->string('state');
             $table->string('zip');
-            $table->string('additional_info');
+            $table->text('additional_info');
         });
     }
 

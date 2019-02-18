@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use App\Concert;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Event;
+use Illuminate\Support\Facades\Response;
 
 class ConcertsController extends Controller
 {
@@ -46,7 +48,7 @@ class ConcertsController extends Controller
      */
     public function show(Concert $concert)
     {
-        return view('welcome', compact('concert'));
+        return view('concerts.show', compact('concert'));
     }
 
     /**
