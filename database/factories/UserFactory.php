@@ -1,5 +1,6 @@
 <?php
 
+use Carbon\Carbon;
 use Faker\Generator as Faker;
 
 /*
@@ -20,5 +21,20 @@ $factory->define(App\User::class, function (Faker $faker) {
         'email_verified_at' => now(),
         'password' => '$2y$10$TKh8H1.PfQx37YgCzwiKb.KjNyWgaHb9cbcoQgdIVFlYg7B77UdFm', // secret
         'remember_token' => str_random(10),
+    ];
+});
+
+$factory->define(App\Concert::class, function(Faker $faker){
+    return [
+        'title' => 'The Example Band',
+        'subtitle' => 'with Example Openers',
+        'date' => Carbon::parse('+2 weeks'),
+        'price' => 2000,
+        'location' => 'The Example Club',
+        'street' => '123 Example Lane',
+        'city' => 'Fakeville',
+        'state' => 'ON',
+        'zip' => '26023',
+        'additional_info' => 'Example additional info'
     ];
 });

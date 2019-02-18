@@ -18,7 +18,7 @@
         <h4 class="event__sub-header">{{ $concert->subtitle }}</h4>
         <div class="event__row">
             <div class="event__icon"><i class="far fa-calendar-alt"></i></div>
-            <div class="event__date">{{ $concert->date->format('F j, Y') }}</div>
+            <div class="event__date">{{ $concert->formatted_date }}</div>
         </div>
         <div class="event__row">
             <div class="event__icon"><i class="far fa-clock"></i></div>
