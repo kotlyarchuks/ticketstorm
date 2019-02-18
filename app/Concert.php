@@ -14,4 +14,14 @@ class Concert extends Model
     {
         return $this->date->format('F j, Y');
     }
+
+    public function getFormattedTimeAttribute()
+    {
+        return $this->date->format('g:ia');
+    }
+
+    public function getFormattedPriceAttribute()
+    {
+        return number_format($this->price/100, 2);
+    }
 }

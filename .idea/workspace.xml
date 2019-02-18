@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/app/Concert.php" line="24" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="94ccaa12-bee7-47e7-a354-e4a2540a0ab2" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/tests/Unit/ExampleTest.php" afterPath="$PROJECT_DIR$/tests/Unit/ConcertTest.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Concert.php" afterPath="$PROJECT_DIR$/app/Concert.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/factories/UserFactory.php" afterPath="$PROJECT_DIR$/database/factories/UserFactory.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/concerts/show.blade.php" afterPath="$PROJECT_DIR$/resources/views/concerts/show.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/Unit/ConcertTest.php" afterPath="$PROJECT_DIR$/tests/Unit/ConcertTest.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -24,11 +25,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ViewConcertsTest.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ViewConcertsTest.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tests/Feature/ViewConcertsTest.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="744">
-              <caret line="36" column="50" lean-forward="true" selection-start-line="36" selection-start-column="50" selection-end-line="36" selection-end-column="50" />
+            <state relative-caret-position="155">
+              <caret line="26" column="34" lean-forward="true" selection-start-line="26" selection-start-column="34" selection-end-line="26" selection-end-column="34" />
               <folding>
                 <element signature="e#33#49#0#PHP" expanded="true" />
               </folding>
@@ -39,8 +40,8 @@
       <file leaf-file-name="ConcertTest.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tests/Unit/ConcertTest.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="465">
-              <caret line="24" column="41" lean-forward="false" selection-start-line="24" selection-start-column="41" selection-end-line="24" selection-end-column="41" />
+            <state relative-caret-position="497">
+              <caret line="45" column="25" lean-forward="false" selection-start-line="45" selection-start-column="25" selection-end-line="45" selection-end-column="25" />
               <folding>
                 <element signature="e#30#46#0#PHP" expanded="true" />
               </folding>
@@ -51,31 +52,19 @@
       <file leaf-file-name="Concert.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Concert.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="434">
-              <caret line="14" column="41" lean-forward="false" selection-start-line="14" selection-start-column="41" selection-end-line="14" selection-end-column="41" />
+            <state relative-caret-position="590">
+              <caret line="24" column="50" lean-forward="false" selection-start-line="24" selection-start-column="50" selection-end-line="24" selection-end-column="50" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="show.blade.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="show.blade.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/views/concerts/show.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="329">
-              <caret line="21" column="14" lean-forward="true" selection-start-line="21" selection-start-column="14" selection-end-line="21" selection-end-column="14" />
+            <state relative-caret-position="298">
+              <caret line="20" column="57" lean-forward="true" selection-start-line="20" selection-start-column="57" selection-end-line="20" selection-end-column="57" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UserFactory.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/database/factories/UserFactory.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="246">
-              <caret line="30" column="22" lean-forward="true" selection-start-line="30" selection-start-column="22" selection-end-line="30" selection-end-column="22" />
-              <folding>
-                <element signature="e#7#25#0#PHP" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -251,13 +240,17 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="PHPUnit.All">
+  <component name="RunManager" selected="PHPUnit.ConcertTest">
     <configuration default="false" name="ViewConcertsTest.user_can_view_concert_listing" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
       <TestRunner class="Tests\Feature\ViewConcertsTest" file="$PROJECT_DIR$/tests/Feature/ViewConcertsTest.php" method="user_can_view_concert_listing" scope="Method" />
       <method />
     </configuration>
     <configuration default="false" name="ConcertTest.can_get_formatted_date" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
       <TestRunner class="Tests\Unit\ConcertTest" file="$PROJECT_DIR$/tests/Unit/ConcertTest.php" method="can_get_formatted_date" scope="Method" />
+      <method />
+    </configuration>
+    <configuration default="false" name="ConcertTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Unit\ConcertTest" file="$PROJECT_DIR$/tests/Unit/ConcertTest.php" scope="Class" />
       <method />
     </configuration>
     <configuration default="true" type="CodeceptionConfigurationType" factoryName="Codeception">
@@ -325,15 +318,17 @@
       <TestRunner directory="$PROJECT_DIR$/tests" />
       <method />
     </configuration>
-    <list size="3">
+    <list size="4">
       <item index="0" class="java.lang.String" itemvalue="PHPUnit.All" />
       <item index="1" class="java.lang.String" itemvalue="PHPUnit.ViewConcertsTest.user_can_view_concert_listing" />
       <item index="2" class="java.lang.String" itemvalue="PHPUnit.ConcertTest.can_get_formatted_date" />
+      <item index="3" class="java.lang.String" itemvalue="PHPUnit.ConcertTest" />
     </list>
     <recent_temporary>
-      <list size="2">
-        <item index="0" class="java.lang.String" itemvalue="PHPUnit.ViewConcertsTest.user_can_view_concert_listing" />
-        <item index="1" class="java.lang.String" itemvalue="PHPUnit.ConcertTest.can_get_formatted_date" />
+      <list size="3">
+        <item index="0" class="java.lang.String" itemvalue="PHPUnit.ConcertTest" />
+        <item index="1" class="java.lang.String" itemvalue="PHPUnit.ViewConcertsTest.user_can_view_concert_listing" />
+        <item index="2" class="java.lang.String" itemvalue="PHPUnit.ConcertTest.can_get_formatted_date" />
       </list>
     </recent_temporary>
   </component>
@@ -352,44 +347,44 @@
       <updated>1550475947505</updated>
       <workItem from="1550475950244" duration="58000" />
       <workItem from="1550476029081" duration="21000" />
-      <workItem from="1550476072503" duration="9630000" />
+      <workItem from="1550476072503" duration="10241000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="All - 2019.02.18 at 15h 20m 53s.xml">
+    <history-entry file="All - 2019.02.18 at 15h 23m 22s.xml">
       <configuration name="All" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="ConcertTest_can_get_formatted_date - 2019.02.18 at 15h 15m 57s.xml">
-      <configuration name="ConcertTest.can_get_formatted_date" configurationId="PHPUnitRunConfigurationType" />
+    <history-entry file="ConcertTest - 2019.02.18 at 15h 23m 26s.xml">
+      <configuration name="ConcertTest" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="ConcertTest_can_get_formatted_date - 2019.02.18 at 15h 16m 14s.xml">
-      <configuration name="ConcertTest.can_get_formatted_date" configurationId="PHPUnitRunConfigurationType" />
+    <history-entry file="ConcertTest - 2019.02.18 at 15h 23m 43s.xml">
+      <configuration name="ConcertTest" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="ConcertTest_can_get_formatted_date - 2019.02.18 at 15h 17m 15s.xml">
-      <configuration name="ConcertTest.can_get_formatted_date" configurationId="PHPUnitRunConfigurationType" />
+    <history-entry file="ConcertTest - 2019.02.18 at 15h 23m 53s.xml">
+      <configuration name="ConcertTest" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="ConcertTest_can_get_formatted_date - 2019.02.18 at 15h 17m 48s.xml">
-      <configuration name="ConcertTest.can_get_formatted_date" configurationId="PHPUnitRunConfigurationType" />
+    <history-entry file="ConcertTest - 2019.02.18 at 15h 24m 23s.xml">
+      <configuration name="ConcertTest" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="ConcertTest_can_get_formatted_date - 2019.02.18 at 15h 19m 09s.xml">
-      <configuration name="ConcertTest.can_get_formatted_date" configurationId="PHPUnitRunConfigurationType" />
+    <history-entry file="ConcertTest - 2019.02.18 at 15h 25m 09s.xml">
+      <configuration name="ConcertTest" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="ConcertTest_can_get_formatted_date - 2019.02.18 at 15h 19m 28s.xml">
-      <configuration name="ConcertTest.can_get_formatted_date" configurationId="PHPUnitRunConfigurationType" />
+    <history-entry file="ConcertTest - 2019.02.18 at 15h 25m 21s.xml">
+      <configuration name="ConcertTest" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="ConcertTest_can_get_formatted_date - 2019.02.18 at 15h 19m 37s.xml">
-      <configuration name="ConcertTest.can_get_formatted_date" configurationId="PHPUnitRunConfigurationType" />
+    <history-entry file="ConcertTest - 2019.02.18 at 15h 30m 04s.xml">
+      <configuration name="ConcertTest" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="ConcertTest_can_get_formatted_date - 2019.02.18 at 15h 20m 06s.xml">
-      <configuration name="ConcertTest.can_get_formatted_date" configurationId="PHPUnitRunConfigurationType" />
+    <history-entry file="ConcertTest - 2019.02.18 at 15h 31m 04s.xml">
+      <configuration name="ConcertTest" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="ViewConcertsTest_user_can_view_concert_listing - 2019.02.18 at 15h 20m 11s.xml">
-      <configuration name="ViewConcertsTest.user_can_view_concert_listing" configurationId="PHPUnitRunConfigurationType" />
+    <history-entry file="ConcertTest - 2019.02.18 at 15h 31m 32s.xml">
+      <configuration name="ConcertTest" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9709000" />
+    <option name="totallyTimeSpent" value="10320000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -494,20 +489,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Concert.php">
+    <entry file="file://$PROJECT_DIR$/tests/Feature/ViewConcertsTest.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="434">
-          <caret line="14" column="41" lean-forward="false" selection-start-line="14" selection-start-column="41" selection-end-line="14" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/Unit/ConcertTest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="24" column="41" lean-forward="false" selection-start-line="24" selection-start-column="41" selection-end-line="24" selection-end-column="41" />
+        <state relative-caret-position="155">
+          <caret line="26" column="34" lean-forward="true" selection-start-line="26" selection-start-column="34" selection-end-line="26" selection-end-column="34" />
           <folding>
-            <element signature="e#30#46#0#PHP" expanded="true" />
+            <element signature="e#33#49#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -522,21 +509,29 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/concerts/show.blade.php">
+    <entry file="file://$PROJECT_DIR$/app/Concert.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="329">
-          <caret line="21" column="14" lean-forward="true" selection-start-line="21" selection-start-column="14" selection-end-line="21" selection-end-column="14" />
+        <state relative-caret-position="590">
+          <caret line="24" column="50" lean-forward="false" selection-start-line="24" selection-start-column="50" selection-end-line="24" selection-end-column="50" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/Feature/ViewConcertsTest.php">
+    <entry file="file://$PROJECT_DIR$/tests/Unit/ConcertTest.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="744">
-          <caret line="36" column="50" lean-forward="true" selection-start-line="36" selection-start-column="50" selection-end-line="36" selection-end-column="50" />
+        <state relative-caret-position="497">
+          <caret line="45" column="25" lean-forward="false" selection-start-line="45" selection-start-column="25" selection-end-line="45" selection-end-column="25" />
           <folding>
-            <element signature="e#33#49#0#PHP" expanded="true" />
+            <element signature="e#30#46#0#PHP" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/concerts/show.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="298">
+          <caret line="20" column="57" lean-forward="true" selection-start-line="20" selection-start-column="57" selection-end-line="20" selection-end-column="57" />
+          <folding />
         </state>
       </provider>
     </entry>

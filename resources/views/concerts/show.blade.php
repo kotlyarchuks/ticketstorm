@@ -22,11 +22,11 @@
         </div>
         <div class="event__row">
             <div class="event__icon"><i class="far fa-clock"></i></div>
-            <div class="event__start">Doors at {{ $concert->date->format('g:ia') }}</div>
+            <div class="event__start">Doors at {{ $concert->formatted_time }}</div>
         </div>
         <div class="event__row">
             <div class="event__icon"><i class="fas fa-dollar-sign"></i></div>
-            <div class="event__price">{{ number_format($concert->price/100, 2) }}</div>
+            <div class="event__price">{{ $concert->formatted_price }}</div>
         </div>
         <div class="event__row">
             <div class="event__icon"><i class="fas fa-map-marker-alt"></i></div>
