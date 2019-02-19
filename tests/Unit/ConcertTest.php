@@ -53,7 +53,7 @@ class ConcertTest extends TestCase
         $unpublishedConcert = factory(Concert::class)->create(['published_at' => null]);
 
         $concerts = Concert::published()->get();
-        
+
         $this->assertTrue($concerts->contains($publishedConcertA));
         $this->assertTrue($concerts->contains($publishedConcertB));
         $this->assertFalse($concerts->contains($unpublishedConcert));

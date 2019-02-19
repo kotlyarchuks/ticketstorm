@@ -38,3 +38,15 @@ $factory->define(App\Concert::class, function(Faker $faker){
         'additional_info' => 'Example additional info'
     ];
 });
+
+$factory->state(App\Concert::class, 'published', function(Faker $faker){
+    return [
+        'published_at' => Carbon::parse('-1 week')
+    ];
+});
+
+$factory->state(App\Concert::class, 'unpublished', function(Faker $faker){
+    return [
+        'published_at' => null
+    ];
+});
