@@ -43,11 +43,13 @@ class ConcertsController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Concert  $concert
+     * @param $id
      * @return \Illuminate\Http\Response
+     * @internal param Concert $concert
      */
-    public function show(Concert $concert)
+    public function show($id)
     {
+        $concert = Concert::published()->findOrFail($id);
         return view('concerts.show', compact('concert'));
     }
 
