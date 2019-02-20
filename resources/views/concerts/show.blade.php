@@ -1,18 +1,6 @@
-<!doctype html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>TicketStorm</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:900" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-</head>
-<body>
+@extends('layout')
+
+@section('content')
     <div class="event">
         <h2 class="event__header">{{ $concert->title }}</h2>
         <h4 class="event__sub-header">{{ $concert->subtitle }}</h4>
@@ -43,6 +31,10 @@
                 <p class="secondary-text">{{ $concert->additional_info }}</p>
             </div>
         </div>
+        <ticket-checkout></ticket-checkout>
     </div>
-</body>
-</html>
+@endsection
+
+@push('beforeScripts')
+<script src="https://checkout.stripe.com/checkout.js"></script>
+@endpush
