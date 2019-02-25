@@ -21,16 +21,14 @@ class ConcertOrdersController extends Controller {
 
     public function store(Concert $concert)
     {
-        $token = request('token');
-        $tickets = request('tickets');
-        $amount = $tickets * $concert->price;
-        $this->gateway->charge($amount, $token);
-
-        $concert->orders()->create([
-            'email'   => request('email'),
-            'tickets' => $tickets,
-            'token'   => $token
+        $this->validate(request(), [
+            'email'   => 'required',
+            'tickets' => 'required|gte:1'
         ]);
+
+        $this->gateway->charge(request('tickets') * $concert->price, request('token'));
+
+        $order = $concert->buyTickets(request('email'), request('tickets'));
 
         return response()->json([], 201);
     }

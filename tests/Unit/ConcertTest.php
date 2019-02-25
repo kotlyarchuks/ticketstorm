@@ -58,4 +58,15 @@ class ConcertTest extends TestCase
         $this->assertTrue($concerts->contains($publishedConcertB));
         $this->assertFalse($concerts->contains($unpublishedConcert));
     }
+
+    /** @test * */
+    function can_buy_tickets()
+    {
+        $concert = factory(Concert::class)->create();
+
+        $order = $concert->buyTickets('denis@example.com', 3);
+
+        $this->assertEquals('denis@example.com', $order->email);
+        $this->assertEquals(3, $order->tickets()->count());
+    }
 }

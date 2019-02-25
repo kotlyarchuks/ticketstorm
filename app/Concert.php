@@ -46,4 +46,17 @@ class Concert extends Model
     {
         return number_format($this->price/100, 2);
     }
+
+    public function buyTickets($email, $ticketQuantity)
+    {
+        $order = $this->orders()->create([
+            'email'   => $email,
+        ]);
+
+        foreach (range(1, $ticketQuantity) as $i) {
+            $order->tickets()->create([]);
+        }
+
+        return $order;
+    }
 }
