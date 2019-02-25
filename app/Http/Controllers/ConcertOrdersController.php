@@ -22,8 +22,9 @@ class ConcertOrdersController extends Controller {
     public function store(Concert $concert)
     {
         $this->validate(request(), [
-            'email'   => 'required',
-            'tickets' => 'required|gte:1'
+            'email'   => 'required|email',
+            'tickets' => 'required|integer|gte:1',
+            'token'   => 'required',
         ]);
 
         $this->gateway->charge(request('tickets') * $concert->price, request('token'));
