@@ -22,6 +22,11 @@ class Concert extends Model
 
     protected $dates = ['date'];
 
+    public function orders()
+    {
+        return $this->hasMany(Order::class);
+    }
+
     public function scopePublished($query)
     {
         return $query->whereNotNull('published_at');
