@@ -28,13 +28,24 @@ class PurchaseTicketsTest extends TestCase {
         $this->app->instance(PaymentGateway::class, $this->paymentGateway);
     }
 
+    protected function buyTickets($concert, $params)
+    {
+        return $this->json('POST', "/concerts/{$concert->id}/orders", $params);
+    }
+
+    protected function assertHasValidationErrors($response, $key)
+    {
+        $response->assertStatus(422);
+        $this->assertArrayHasKey($key, $response->decodeResponseJson()['errors']);
+    }
+
     /** @test * */
     function user_can_purchase_tickets_for_concert()
     {
         //create concert
         $concert = factory(Concert::class)->create(['price' => 4250]);
         //request to endpoint
-        $response = $this->json('POST', "/concerts/{$concert->id}/orders", [
+        $response = $this->buyTickets($concert, [
             'email'   => 'johndoe@example.com',
             'tickets' => 3,
             'token'   => $this->paymentGateway->getValidTestToken(),
@@ -53,22 +64,20 @@ class PurchaseTicketsTest extends TestCase {
     {
         $concert = factory(Concert::class)->create();
 
-        $response = $this->json('POST', "/concerts/{$concert->id}/orders", [
+        $response = $this->buyTickets($concert, [
             'tickets' => 3,
             'token'   => $this->paymentGateway->getValidTestToken(),
         ]);
 
-        $response->assertStatus(422);
-        $this->assertArrayHasKey('email', $response->decodeResponseJson()['errors']);
+        $this->assertHasValidationErrors($response, 'email');
 
-        $response = $this->json('POST', "/concerts/{$concert->id}/orders", [
+        $response = $this->buyTickets($concert, [
             'email'   => 'my-email-address',
             'tickets' => 3,
             'token'   => $this->paymentGateway->getValidTestToken(),
         ]);
 
-        $response->assertStatus(422);
-        $this->assertArrayHasKey('email', $response->decodeResponseJson()['errors']);
+        $this->assertHasValidationErrors($response, 'email');
     }
 
     /** @test * */
@@ -76,22 +85,20 @@ class PurchaseTicketsTest extends TestCase {
     {
         $concert = factory(Concert::class)->create();
 
-        $response = $this->json('POST', "/concerts/{$concert->id}/orders", [
+        $response = $this->buyTickets($concert, [
             'email' => 'john@doe.com',
             'token' => $this->paymentGateway->getValidTestToken(),
         ]);
 
-        $response->assertStatus(422);
-        $this->assertArrayHasKey('tickets', $response->decodeResponseJson()['errors']);
+        $this->assertHasValidationErrors($response, 'tickets');
 
-        $response = $this->json('POST', "/concerts/{$concert->id}/orders", [
+        $response = $this->buyTickets($concert, [
             'tickets' => 0,
             'email'   => 'john@doe.com',
             'token'   => $this->paymentGateway->getValidTestToken(),
         ]);
 
-        $response->assertStatus(422);
-        $this->assertArrayHasKey('tickets', $response->decodeResponseJson()['errors']);
+        $this->assertHasValidationErrors($response, 'tickets');
     }
 
     /** @test * */
@@ -99,12 +106,11 @@ class PurchaseTicketsTest extends TestCase {
     {
         $concert = factory(Concert::class)->create();
 
-        $response = $this->json('POST', "/concerts/{$concert->id}/orders", [
+        $response = $this->buyTickets($concert, [
             'email' => 'john@doe.com',
             'tickets' => 2
         ]);
 
-        $response->assertStatus(422);
-        $this->assertArrayHasKey('token', $response->decodeResponseJson()['errors']);
+        $this->assertHasValidationErrors($response, 'token');
     }
 }
