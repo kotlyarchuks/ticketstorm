@@ -2,6 +2,7 @@
 
 namespace Tests\Unit;
 
+use App\Billing\FailedPaymentException;
 use App\Billing\FakePaymentGateway;
 use App\Concert;
 use Carbon\Carbon;
@@ -9,8 +10,8 @@ use Illuminate\Foundation\Testing\DatabaseMigrations;
 use Tests\TestCase;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 
-class FakePaymentGatewayTest extends TestCase
-{
+class FakePaymentGatewayTest extends TestCase {
+
     use DatabaseMigrations;
 
     /** @test * */
@@ -20,5 +21,21 @@ class FakePaymentGatewayTest extends TestCase
         $gateway->charge(2400, $gateway->getValidTestToken());
 
         $this->assertEquals(2400, $gateway->totalCharged());
+    }
+
+    /** @test * */
+    function purchases_with_invalid_token_fail()
+    {
+        $gateway = new FakePaymentGateway;
+        try
+        {
+            $gateway->charge(2400, 'invalid-token');
+        } catch (FailedPaymentException $e)
+        {
+            $this->assertTrue(true);
+            return;
+        }
+
+        $this->fail();
     }
 }
