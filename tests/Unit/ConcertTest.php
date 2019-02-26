@@ -3,6 +3,7 @@
 namespace Tests\Unit;
 
 use App\Concert;
+use App\Exceptions\NotEnoughTicketsException;
 use Carbon\Carbon;
 use Illuminate\Foundation\Testing\DatabaseMigrations;
 use Tests\TestCase;
@@ -63,10 +64,68 @@ class ConcertTest extends TestCase
     function can_buy_tickets()
     {
         $concert = factory(Concert::class)->create();
+        $concert->addTickets(5);
 
         $order = $concert->buyTickets('denis@example.com', 3);
 
         $this->assertEquals('denis@example.com', $order->email);
         $this->assertEquals(3, $order->tickets()->count());
+    }
+
+    /** @test * */
+    function can_add_tickets_to_concert()
+    {
+        $concert = factory(Concert::class)->create();
+        $concert->addTickets(50);
+
+        $this->assertEquals(50, $concert->remainingTickets());
+    }
+
+    /** @test * */
+    function remaining_tickets_dont_include_tickets_associated_with_orders()
+    {
+        $concert = factory(Concert::class)->create();
+        $concert->addTickets(50);
+
+        $concert->buyTickets('denis@example.com', 30);
+
+        $this->assertEquals(20, $concert->remainingTickets());
+    }
+
+    /** @test * */
+    function buying_more_tickets_than_remaining_throws_exception()
+    {
+        $concert = factory(Concert::class)->create();
+        $concert->addTickets(10);
+
+        try {
+            $concert->buyTickets('denis@example.com', 11);
+        } catch(NotEnoughTicketsException $e) {
+            $order = $concert->orders()->where('email', 'denis@example.com')->first();
+            $this->assertNull($order);
+            $this->assertEquals(10, $concert->remainingTickets());
+            return;
+        }
+
+        $this->fail('Tickets were purchased over the limit');
+    }
+
+    /** @test * */
+    function cannot_order_tickets_that_already_ordered()
+    {
+        $concert = factory(Concert::class)->create();
+        $concert->addTickets(10);
+
+        $concert->buyTickets('denis@example.com', 6);
+        try {
+            $concert->buyTickets('sasha@example.com', 5);
+        } catch(NotEnoughTicketsException $e) {
+            $sashaOrder = $concert->orders()->where('email', 'sasha@example.com')->first();
+            $this->assertNull($sashaOrder);
+            $this->assertEquals(4, $concert->remainingTickets());
+            return;
+        }
+
+        $this->fail("Tickets were purchased over the limit");
     }
 }

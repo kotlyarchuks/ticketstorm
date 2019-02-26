@@ -44,6 +44,7 @@ class PurchaseTicketsTest extends TestCase {
     {
         //create concert
         $concert = factory(Concert::class)->state('published')->create(['price' => 4250]);
+        $concert->addTickets(5);
         //request to endpoint
         $response = $this->buyTickets($concert, [
             'email'   => 'johndoe@example.com',
@@ -63,6 +64,7 @@ class PurchaseTicketsTest extends TestCase {
     function cannot_purchase_tickets_for_unpublished_concert()
     {
         $concert = factory(Concert::class)->state('unpublished')->create();
+        $concert->addTickets(3);
 
         $response = $this->buyTickets($concert, [
             'email'   => 'johndoe@example.com',
@@ -75,6 +77,28 @@ class PurchaseTicketsTest extends TestCase {
         $this->assertEquals(0, $concert->orders()->count());
 
         $this->assertEquals(0, $this->paymentGateway->totalCharged());
+    }
+
+    /** @test * */
+    function cannot_purchase_more_tickets_that_remained()
+    {
+        $this->disableExceptionHandling();
+        $concert = factory(Concert::class)->state('published')->create();
+        $concert->addTickets(50);
+
+        $response = $this->buyTickets($concert, [
+            'email'   => 'johndoe@example.com',
+            'tickets' => 51,
+            'token'   => $this->paymentGateway->getValidTestToken(),
+        ]);
+
+        $response->assertStatus(422);
+
+        $order = $concert->orders()->where('email', 'johndoe@example.com')->first();
+        $this->assertNull($order);
+
+        $this->assertEquals(0, $this->paymentGateway->totalCharged());
+        $this->assertEquals(50, $concert->remainingTickets());
     }
 
     /** @test * */
@@ -136,6 +160,7 @@ class PurchaseTicketsTest extends TestCase {
     function order_is_not_created_if_payment_fails()
     {
         $concert = factory(Concert::class)->state('published')->create();
+        $concert->addTickets(2);
 
         $response = $this->buyTickets($concert, [
             'email'   => 'john@doe.com',
