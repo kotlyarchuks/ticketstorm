@@ -20,8 +20,10 @@ class ConcertOrdersController extends Controller {
         $this->gateway = $gateway;
     }
 
-    public function store(Concert $concert)
+    public function store($concertId)
     {
+        $concert = Concert::published()->findOrFail($concertId);
+
         $this->validate(request(), [
             'email'   => 'required|email',
             'tickets' => 'required|integer|gte:1',

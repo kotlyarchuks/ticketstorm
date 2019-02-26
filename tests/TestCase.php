@@ -5,7 +5,7 @@ namespace Tests;
 use Exception;
 use App\Exceptions\Handler;
 use Illuminate\Foundation\Testing\TestCase as BaseTestCase;
-use Symfony\Component\Debug\ExceptionHandler;
+use Illuminate\Contracts\Debug\ExceptionHandler;
 
 abstract class TestCase extends BaseTestCase
 {
