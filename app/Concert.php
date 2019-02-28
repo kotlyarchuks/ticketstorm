@@ -16,6 +16,36 @@ use Illuminate\Database\Eloquent\Model;
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Concert published()
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Concert query()
  * @mixin \Eloquent
+ * @property int $id
+ * @property \Illuminate\Support\Carbon|null $created_at
+ * @property \Illuminate\Support\Carbon|null $updated_at
+ * @property string $title
+ * @property string $subtitle
+ * @property \Illuminate\Support\Carbon $date
+ * @property int $price
+ * @property string $location
+ * @property string $street
+ * @property string $city
+ * @property string $state
+ * @property string $zip
+ * @property string $additional_info
+ * @property string|null $published_at
+ * @property-read \Illuminate\Database\Eloquent\Collection|\App\Order[] $orders
+ * @property-read \Illuminate\Database\Eloquent\Collection|\App\Ticket[] $tickets
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Concert whereAdditionalInfo($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Concert whereCity($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Concert whereCreatedAt($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Concert whereDate($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Concert whereId($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Concert whereLocation($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Concert wherePrice($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Concert wherePublishedAt($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Concert whereState($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Concert whereStreet($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Concert whereSubtitle($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Concert whereTitle($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Concert whereUpdatedAt($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Concert whereZip($value)
  */
 class Concert extends Model
 {

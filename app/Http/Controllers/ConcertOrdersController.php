@@ -33,8 +33,9 @@ class ConcertOrdersController extends Controller {
 
         try
         {
+            $amount = request('tickets') * $concert->price;
             $order = $concert->buyTickets(request('email'), request('tickets'));
-            $this->gateway->charge(request('tickets') * $concert->price, request('token'));
+            $this->gateway->charge($amount, request('token'));
         } catch (FailedPaymentException $e)
         {
             $order->cancel();
@@ -45,6 +46,6 @@ class ConcertOrdersController extends Controller {
             return response()->json([], 422);
         }
 
-        return response()->json([], 201);
+        return response()->json($order->toArray(), 201);
     }
 }
