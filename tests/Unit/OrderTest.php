@@ -24,4 +24,17 @@ class OrderTest extends TestCase
 
         $this->assertNull($concert->orders()->where('email', 'denis@example.com')->first());
     }
+
+    /** @test * */
+    function tickets_are_released_if_payment_fails()
+    {
+        $concert = factory(Concert::class)->create();
+        $concert->addTickets(5);
+
+        $order = $concert->buyTickets('denis@example.com', 3);
+        $this->assertEquals(2, $concert->remainingTickets());
+
+        $order->cancel();
+        $this->assertEquals(5, $concert->remainingTickets());
+    }
 }
