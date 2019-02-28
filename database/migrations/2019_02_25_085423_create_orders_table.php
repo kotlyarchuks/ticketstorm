@@ -18,6 +18,7 @@ class CreateOrdersTable extends Migration
             $table->timestamps();
             $table->unsignedInteger('concert_id');
             $table->string('email');
+            $table->integer('amount');
 
             $table->foreign('concert_id')->references('id')->on('concerts')->onDelete('cascade');
         });

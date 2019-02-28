@@ -47,8 +47,8 @@ use Illuminate\Database\Eloquent\Model;
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Concert whereUpdatedAt($value)
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Concert whereZip($value)
  */
-class Concert extends Model
-{
+class Concert extends Model {
+
     protected $guarded = [];
 
     protected $dates = ['date'];
@@ -65,7 +65,8 @@ class Concert extends Model
 
     public function addTickets($quantity)
     {
-        foreach (range(1, $quantity) as $i) {
+        foreach (range(1, $quantity) as $i)
+        {
             $this->tickets()->create([]);
         }
 
@@ -94,22 +95,25 @@ class Concert extends Model
 
     public function getFormattedPriceAttribute()
     {
-        return number_format($this->price/100, 2);
+        return number_format($this->price / 100, 2);
     }
 
     public function buyTickets($email, $ticketQuantity)
     {
         $tickets = $this->tickets()->available()->take($ticketQuantity)->get();
 
-        if($tickets->count() < $ticketQuantity){
+        if ($tickets->count() < $ticketQuantity)
+        {
             throw new NotEnoughTicketsException;
         }
 
         $order = $this->orders()->create([
-            'email'   => $email,
+            'email'  => $email,
+            'amount' => $ticketQuantity * $this->price,
         ]);
 
-        foreach ($tickets as $ticket) {
+        foreach ($tickets as $ticket)
+        {
             $order->tickets()->save($ticket);
         }
 
@@ -121,7 +125,7 @@ class Concert extends Model
     {
         return $this->orders()->where('email', $email)->get();
     }
-    
+
     public function hasOrderFor($email)
     {
         return $this->ordersFor($email)->count() > 0;
