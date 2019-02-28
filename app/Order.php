@@ -21,4 +21,11 @@ class Order extends Model
         }
         $this->delete();
     }
+
+    // FOR TESTING
+
+    public function ticketCount()
+    {
+        return $this->tickets()->count();
+    }
 }

@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/app/Concert.php" line="64" />
+    <bookmark url="file://$PROJECT_DIR$/app/Concert.php" line="66" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="94ccaa12-bee7-47e7-a354-e4a2540a0ab2" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Concert.php" afterPath="$PROJECT_DIR$/app/Concert.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/ConcertOrdersController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/ConcertOrdersController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Order.php" afterPath="$PROJECT_DIR$/app/Order.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Ticket.php" afterPath="$PROJECT_DIR$/app/Ticket.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/Feature/PurchaseTicketsTest.php" afterPath="$PROJECT_DIR$/tests/Feature/PurchaseTicketsTest.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -26,13 +27,25 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="PurchaseTicketsTest.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="PurchaseTicketsTest.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/tests/Feature/PurchaseTicketsTest.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="332">
-              <caret line="93" column="0" lean-forward="true" selection-start-line="93" selection-start-column="0" selection-end-line="93" selection-end-column="0" />
+            <state relative-caret-position="533">
+              <caret line="166" column="16" lean-forward="true" selection-start-line="166" selection-start-column="16" selection-end-line="166" selection-end-column="16" />
               <folding>
                 <element signature="e#121#156#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Concert.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Concert.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="409">
+              <caret line="91" column="42" lean-forward="true" selection-start-line="91" selection-start-column="42" selection-end-line="91" selection-end-column="42" />
+              <folding>
+                <element signature="e#23#68#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -65,8 +78,8 @@
       <file leaf-file-name="Order.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Order.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="502">
-              <caret line="20" column="9" lean-forward="true" selection-start-line="20" selection-start-column="9" selection-end-line="20" selection-end-column="9" />
+            <state relative-caret-position="533">
+              <caret line="28" column="41" lean-forward="false" selection-start-line="28" selection-start-column="41" selection-end-line="28" selection-end-column="41" />
               <folding />
             </state>
           </provider>
@@ -94,23 +107,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Concert.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Concert.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="73" column="9" lean-forward="true" selection-start-line="73" selection-start-column="9" selection-end-line="73" selection-end-column="9" />
-              <folding>
-                <element signature="e#23#68#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ConcertOrdersController.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ConcertOrdersController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ConcertOrdersController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="527">
-              <caret line="41" column="29" lean-forward="true" selection-start-line="41" selection-start-column="29" selection-end-line="41" selection-end-column="29" />
+            <state relative-caret-position="347">
+              <caret line="35" column="65" lean-forward="true" selection-start-line="35" selection-start-column="65" selection-end-line="35" selection-end-column="65" />
               <folding>
                 <element signature="e#40#79#0#PHP" expanded="true" />
               </folding>
@@ -149,14 +150,14 @@
         <option value="$PROJECT_DIR$/tests/TestCase.php" />
         <option value="$PROJECT_DIR$/app/Exceptions/NotEnoughTicketsException.php" />
         <option value="$PROJECT_DIR$/tests/Unit/ConcertTest.php" />
-        <option value="$PROJECT_DIR$/app/Concert.php" />
-        <option value="$PROJECT_DIR$/tests/Feature/PurchaseTicketsTest.php" />
         <option value="$PROJECT_DIR$/database/migrations/2019_02_25_102101_create_tickets_table.php" />
         <option value="$PROJECT_DIR$/tests/Unit/OrderTest.php" />
         <option value="$PROJECT_DIR$/app/Ticket.php" />
-        <option value="$PROJECT_DIR$/app/Order.php" />
         <option value="$PROJECT_DIR$/tests/Unit/TicketTest.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/ConcertOrdersController.php" />
+        <option value="$PROJECT_DIR$/app/Concert.php" />
+        <option value="$PROJECT_DIR$/app/Order.php" />
+        <option value="$PROJECT_DIR$/tests/Feature/PurchaseTicketsTest.php" />
       </list>
     </option>
   </component>
@@ -357,10 +358,6 @@
     </option>
   </component>
   <component name="RunManager" selected="PHPUnit.All">
-    <configuration default="false" name="ConcertTest.cannot_order_tickets_that_already_ordered" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="Tests\Unit\ConcertTest" file="$PROJECT_DIR$/tests/Unit/ConcertTest.php" method="cannot_order_tickets_that_already_ordered" scope="Method" />
-      <method />
-    </configuration>
     <configuration default="false" name="OrderTest.order_can_be_cancelled" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
       <TestRunner class="Tests\Unit\OrderTest" file="$PROJECT_DIR$/tests/Unit/OrderTest.php" method="order_can_be_cancelled" scope="Method" />
       <method />
@@ -375,6 +372,10 @@
     </configuration>
     <configuration default="false" name="TicketTest.ticket_can_be_released" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
       <TestRunner class="Tests\Unit\TicketTest" file="$PROJECT_DIR$/tests/Unit/TicketTest.php" method="ticket_can_be_released" scope="Method" />
+      <method />
+    </configuration>
+    <configuration default="false" name="PurchaseTicketsTest.user_can_purchase_tickets_for_concert" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Feature\PurchaseTicketsTest" file="$PROJECT_DIR$/tests/Feature/PurchaseTicketsTest.php" method="user_can_purchase_tickets_for_concert" scope="Method" />
       <method />
     </configuration>
     <configuration default="true" type="CodeceptionConfigurationType" factoryName="Codeception">
@@ -450,19 +451,19 @@
     </configuration>
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="PHPUnit.All" />
-      <item index="1" class="java.lang.String" itemvalue="PHPUnit.ConcertTest.cannot_order_tickets_that_already_ordered" />
-      <item index="2" class="java.lang.String" itemvalue="PHPUnit.OrderTest.order_can_be_cancelled" />
-      <item index="3" class="java.lang.String" itemvalue="PHPUnit.PurchaseTicketsTest.order_is_not_created_if_payment_fails" />
-      <item index="4" class="java.lang.String" itemvalue="PHPUnit.OrderTest.tickets_are_released_if_payment_fails" />
-      <item index="5" class="java.lang.String" itemvalue="PHPUnit.TicketTest.ticket_can_be_released" />
+      <item index="1" class="java.lang.String" itemvalue="PHPUnit.OrderTest.order_can_be_cancelled" />
+      <item index="2" class="java.lang.String" itemvalue="PHPUnit.PurchaseTicketsTest.order_is_not_created_if_payment_fails" />
+      <item index="3" class="java.lang.String" itemvalue="PHPUnit.OrderTest.tickets_are_released_if_payment_fails" />
+      <item index="4" class="java.lang.String" itemvalue="PHPUnit.TicketTest.ticket_can_be_released" />
+      <item index="5" class="java.lang.String" itemvalue="PHPUnit.PurchaseTicketsTest.user_can_purchase_tickets_for_concert" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="PHPUnit.TicketTest.ticket_can_be_released" />
-        <item index="1" class="java.lang.String" itemvalue="PHPUnit.OrderTest.tickets_are_released_if_payment_fails" />
-        <item index="2" class="java.lang.String" itemvalue="PHPUnit.PurchaseTicketsTest.order_is_not_created_if_payment_fails" />
-        <item index="3" class="java.lang.String" itemvalue="PHPUnit.OrderTest.order_can_be_cancelled" />
-        <item index="4" class="java.lang.String" itemvalue="PHPUnit.ConcertTest.cannot_order_tickets_that_already_ordered" />
+        <item index="0" class="java.lang.String" itemvalue="PHPUnit.PurchaseTicketsTest.user_can_purchase_tickets_for_concert" />
+        <item index="1" class="java.lang.String" itemvalue="PHPUnit.TicketTest.ticket_can_be_released" />
+        <item index="2" class="java.lang.String" itemvalue="PHPUnit.OrderTest.tickets_are_released_if_payment_fails" />
+        <item index="3" class="java.lang.String" itemvalue="PHPUnit.PurchaseTicketsTest.order_is_not_created_if_payment_fails" />
+        <item index="4" class="java.lang.String" itemvalue="PHPUnit.OrderTest.order_can_be_cancelled" />
       </list>
     </recent_temporary>
   </component>
@@ -483,44 +484,44 @@
       <workItem from="1550476029081" duration="21000" />
       <workItem from="1550476072503" duration="17408000" />
       <workItem from="1550572439894" duration="13545000" />
-      <workItem from="1550765063699" duration="31106000" />
+      <workItem from="1550765063699" duration="33609000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="All - 2019.02.28 at 11h 34m 09s.xml">
-      <configuration name="All" configurationId="PHPUnitRunConfigurationType" />
-    </history-entry>
-    <history-entry file="All - 2019.02.28 at 11h 34m 26s.xml">
-      <configuration name="All" configurationId="PHPUnitRunConfigurationType" />
-    </history-entry>
-    <history-entry file="All - 2019.02.28 at 11h 38m 45s.xml">
-      <configuration name="All" configurationId="PHPUnitRunConfigurationType" />
-    </history-entry>
     <history-entry file="All - 2019.02.28 at 11h 45m 26s.xml">
       <configuration name="All" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
     <history-entry file="All - 2019.02.28 at 11h 47m 05s.xml">
       <configuration name="All" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="TicketTest_ticket_can_be_released - 2019.02.28 at 11h 38m 13s.xml">
-      <configuration name="TicketTest.ticket_can_be_released" configurationId="PHPUnitRunConfigurationType" />
+    <history-entry file="All - 2019.02.28 at 12h 32m 00s.xml">
+      <configuration name="All" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="TicketTest_ticket_can_be_released - 2019.02.28 at 11h 38m 34s.xml">
-      <configuration name="TicketTest.ticket_can_be_released" configurationId="PHPUnitRunConfigurationType" />
+    <history-entry file="All - 2019.02.28 at 12h 49m 25s.xml">
+      <configuration name="All" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="TicketTest_ticket_can_be_released - 2019.02.28 at 11h 40m 45s.xml">
-      <configuration name="TicketTest.ticket_can_be_released" configurationId="PHPUnitRunConfigurationType" />
+    <history-entry file="PurchaseTicketsTest_user_can_purchase_tickets_for_concert - 2019.02.28 at 12h 30m 48s.xml">
+      <configuration name="PurchaseTicketsTest.user_can_purchase_tickets_for_concert" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="TicketTest_ticket_can_be_released - 2019.02.28 at 11h 40m 53s.xml">
-      <configuration name="TicketTest.ticket_can_be_released" configurationId="PHPUnitRunConfigurationType" />
+    <history-entry file="PurchaseTicketsTest_user_can_purchase_tickets_for_concert - 2019.02.28 at 12h 38m 17s.xml">
+      <configuration name="PurchaseTicketsTest.user_can_purchase_tickets_for_concert" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="TicketTest_ticket_can_be_released - 2019.02.28 at 11h 41m 40s.xml">
-      <configuration name="TicketTest.ticket_can_be_released" configurationId="PHPUnitRunConfigurationType" />
+    <history-entry file="PurchaseTicketsTest_user_can_purchase_tickets_for_concert - 2019.02.28 at 12h 38m 31s.xml">
+      <configuration name="PurchaseTicketsTest.user_can_purchase_tickets_for_concert" configurationId="PHPUnitRunConfigurationType" />
+    </history-entry>
+    <history-entry file="PurchaseTicketsTest_user_can_purchase_tickets_for_concert - 2019.02.28 at 12h 43m 26s.xml">
+      <configuration name="PurchaseTicketsTest.user_can_purchase_tickets_for_concert" configurationId="PHPUnitRunConfigurationType" />
+    </history-entry>
+    <history-entry file="PurchaseTicketsTest_user_can_purchase_tickets_for_concert - 2019.02.28 at 12h 45m 38s.xml">
+      <configuration name="PurchaseTicketsTest.user_can_purchase_tickets_for_concert" configurationId="PHPUnitRunConfigurationType" />
+    </history-entry>
+    <history-entry file="PurchaseTicketsTest_user_can_purchase_tickets_for_concert - 2019.02.28 at 12h 47m 34s.xml">
+      <configuration name="PurchaseTicketsTest.user_can_purchase_tickets_for_concert" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="62138000" />
+    <option name="totallyTimeSpent" value="64641000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -847,14 +848,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/database/factories/UserFactory.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="36" column="25" lean-forward="true" selection-start-line="36" selection-start-column="25" selection-end-line="36" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tests/Unit/Billing/FakePaymentGatewayTest.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="936">
@@ -915,14 +908,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Order.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="502">
-          <caret line="20" column="9" lean-forward="true" selection-start-line="20" selection-start-column="9" selection-end-line="20" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tests/Unit/OrderTest.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="372">
@@ -943,32 +928,48 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/Feature/PurchaseTicketsTest.php">
+    <entry file="file://$PROJECT_DIR$/database/factories/UserFactory.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="332">
-          <caret line="93" column="0" lean-forward="true" selection-start-line="93" selection-start-column="0" selection-end-line="93" selection-end-column="0" />
+        <state relative-caret-position="626">
+          <caret line="43" column="22" lean-forward="true" selection-start-line="43" selection-start-column="22" selection-end-line="43" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ConcertOrdersController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="347">
+          <caret line="35" column="65" lean-forward="true" selection-start-line="35" selection-start-column="65" selection-end-line="35" selection-end-column="65" />
           <folding>
-            <element signature="e#121#156#0#PHP" expanded="true" />
+            <element signature="e#40#79#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Concert.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="73" column="9" lean-forward="true" selection-start-line="73" selection-start-column="9" selection-end-line="73" selection-end-column="9" />
+        <state relative-caret-position="409">
+          <caret line="91" column="42" lean-forward="true" selection-start-line="91" selection-start-column="42" selection-end-line="91" selection-end-column="42" />
           <folding>
             <element signature="e#23#68#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ConcertOrdersController.php">
+    <entry file="file://$PROJECT_DIR$/app/Order.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="41" column="29" lean-forward="true" selection-start-line="41" selection-start-column="29" selection-end-line="41" selection-end-column="29" />
+        <state relative-caret-position="533">
+          <caret line="28" column="41" lean-forward="false" selection-start-line="28" selection-start-column="41" selection-end-line="28" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/Feature/PurchaseTicketsTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="533">
+          <caret line="166" column="16" lean-forward="true" selection-start-line="166" selection-start-column="16" selection-end-line="166" selection-end-column="16" />
           <folding>
-            <element signature="e#40#79#0#PHP" expanded="true" />
+            <element signature="e#121#156#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>

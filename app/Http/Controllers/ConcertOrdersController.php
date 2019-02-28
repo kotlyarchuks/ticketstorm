@@ -38,8 +38,10 @@ class ConcertOrdersController extends Controller {
         } catch (FailedPaymentException $e)
         {
             $order->cancel();
+
             return response()->json([], 422);
-        } catch (NotEnoughTicketsException $e) {
+        } catch (NotEnoughTicketsException $e)
+        {
             return response()->json([], 422);
         }
 
