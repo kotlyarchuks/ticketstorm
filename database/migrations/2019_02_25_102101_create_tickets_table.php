@@ -18,6 +18,8 @@ class CreateTicketsTable extends Migration
             $table->unsignedInteger('concert_id');
             $table->unsignedInteger('order_id')->nullable();
             $table->timestamps();
+
+            $table->foreign('order_id')->references('id')->on('orders')->onDelete('cascade');
         });
     }
 
