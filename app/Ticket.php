@@ -30,6 +30,16 @@ class Ticket extends Model
         return $query->whereNull('order_id');
     }
 
+    public function concert()
+    {
+        return $this->belongsTo(Concert::class);
+    }
+
+    public function getPriceAttribute()
+    {
+        return $this->concert->price;
+    }
+
     public function release()
     {
         $this->update(['order_id' => null]);
