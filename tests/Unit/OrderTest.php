@@ -4,6 +4,7 @@ namespace Tests\Unit;
 
 use App\Concert;
 use App\Exceptions\NotEnoughTicketsException;
+use App\Order;
 use Carbon\Carbon;
 use Illuminate\Foundation\Testing\DatabaseMigrations;
 use Tests\TestCase;
@@ -12,6 +13,20 @@ use Illuminate\Foundation\Testing\RefreshDatabase;
 class OrderTest extends TestCase {
 
     use DatabaseMigrations;
+
+    /** @test * */
+    function can_generate_order_for_tickets_and_email()
+    {
+        $concert = factory(Concert::class)->create(['price' => 2500])->addTickets(5);
+        $this->assertEquals(5, $concert->remainingTickets());
+
+        $order = Order::forTickets($concert->findTickets(3), 'denis@example.com');
+
+        $this->assertEquals('denis@example.com', $order->email);
+        $this->assertEquals(3, $order->ticketCount());
+        $this->assertEquals(7500, $order->amount);
+        $this->assertEquals(2, $concert->remainingTickets());
+    }
 
     /** @test * */
     function converting_to_array()
