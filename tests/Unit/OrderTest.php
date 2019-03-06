@@ -15,12 +15,12 @@ class OrderTest extends TestCase {
     use DatabaseMigrations;
 
     /** @test * */
-    function can_generate_order_for_tickets_and_email()
+    function can_generate_order_for_tickets_email_and_amount()
     {
         $concert = factory(Concert::class)->create(['price' => 2500])->addTickets(5);
         $this->assertEquals(5, $concert->remainingTickets());
 
-        $order = Order::forTickets($concert->findTickets(3), 'denis@example.com');
+        $order = Order::forTickets($concert->findTickets(3), 'denis@example.com', 7500);
 
         $this->assertEquals('denis@example.com', $order->email);
         $this->assertEquals(3, $order->ticketCount());

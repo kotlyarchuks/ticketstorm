@@ -37,9 +37,9 @@ class ConcertOrdersController extends Controller {
             // Find tickets
             $tickets = $concert->findTickets(request('tickets'));
             // Charge
-            $this->gateway->charge(request('tickets') * $concert->price, request('token'));
+            $this->gateway->charge($tickets->sum('price'), request('token'));
             // Create order
-            $order = Order::forTickets($tickets, request('email'));
+            $order = Order::forTickets($tickets, request('email'), $tickets->sum('price'));
 
         } catch (FailedPaymentException | NotEnoughTicketsException $e)
         {
