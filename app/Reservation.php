@@ -11,7 +11,7 @@ class Reservation
      *
      * @param array $tickets
      */
-    public function __construct($tickets = [])
+    public function __construct($tickets)
     {
         $this->tickets = $tickets;
     }

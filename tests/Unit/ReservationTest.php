@@ -13,16 +13,18 @@ use Illuminate\Foundation\Testing\RefreshDatabase;
 
 class ReservationTest extends TestCase {
 
-    use DatabaseMigrations;
 
     /** @test * */
     function can_calculate_total_amount_for_reservation()
     {
-        $concert = factory(Concert::class)->create(['price' => 2500])->addTickets(5);
-        $this->assertEquals(5, $concert->remainingTickets());
+        $tickets = collect([
+            (object) ['price' => 1200],
+            (object) ['price' => 1200],
+            (object) ['price' => 1200],
+        ]);
 
-        $reservation = new Reservation($concert->findTickets(3));
+        $reservation = new Reservation($tickets);
 
-        $this->assertEquals(7500, $reservation->totalSum());
+        $this->assertEquals(3600, $reservation->totalSum());
     }
 }
