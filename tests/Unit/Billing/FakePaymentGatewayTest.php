@@ -38,4 +38,21 @@ class FakePaymentGatewayTest extends TestCase {
 
         $this->fail();
     }
+
+    /** @test * */
+    function can_set_callback_to_use_before_charge()
+    {
+        $gateway = new FakePaymentGateway;
+        $callbackRan = false;
+
+        $gateway->beforeCharge(function($gateway) use(&$callbackRan){
+            $callbackRan = true;
+            $this->assertEquals(0, $gateway->totalCharged());
+        });
+
+        $gateway->charge(2400, $gateway->getValidTestToken());
+
+        $this->assertTrue($callbackRan);
+        $this->assertEquals(2400, $gateway->totalCharged());
+    }
 }

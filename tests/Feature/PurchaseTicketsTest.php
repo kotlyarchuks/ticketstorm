@@ -102,6 +102,35 @@ class PurchaseTicketsTest extends TestCase {
     }
 
     /** @test * */
+    function cannot_purchase_tickets_that_already_are_reserved_by_other_person()
+    {
+        $concert = factory(Concert::class)->state('published')->create(['price' => 1200])->addTickets(3);
+
+        $this->paymentGateway->beforeCharge(function ($paymentGateway) use($concert){
+            $response = $this->buyTickets($concert, [
+                'email'   => 'personB@mail.com',
+                'tickets' => 3,
+                'token'   => $paymentGateway->getValidTestToken(),
+            ]);
+
+            $response->assertStatus(422);
+            $this->assertFalse($concert->hasOrderFor('personB@example.com'));
+            $this->assertEquals(0, $this->paymentGateway->totalCharged());
+        });
+
+        $this->buyTickets($concert, [
+            'email'   => 'personA@mail.com',
+            'tickets' => 3,
+            'token'   => $this->paymentGateway->getValidTestToken(),
+        ]);
+
+        $this->assertEquals(3600, $this->paymentGateway->totalCharged());
+
+        $this->assertTrue($concert->hasOrderFor('personA@example.com'));
+        $this->assertEquals(3, $concert->ordersFor('personA@example.com')->first()->ticketCount());
+    }
+
+    /** @test * */
     function email_is_required_to_buy_tickets()
     {
         $concert = factory(Concert::class)->state('published')->create();
