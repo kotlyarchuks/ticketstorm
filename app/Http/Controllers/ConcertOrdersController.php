@@ -36,7 +36,7 @@ class ConcertOrdersController extends Controller {
         try
         {
             // Find tickets
-            $tickets = $concert->findTickets(request('tickets'));
+            $tickets = $concert->reserveTickets(request('tickets'));
             $reservation = new Reservation($tickets);
             // Charge
             $this->gateway->charge($reservation->totalSum(), request('token'));

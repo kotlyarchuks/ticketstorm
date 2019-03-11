@@ -114,7 +114,7 @@ class PurchaseTicketsTest extends TestCase {
             ]);
 
             $response->assertStatus(422);
-            $this->assertFalse($concert->hasOrderFor('personB@example.com'));
+            $this->assertFalse($concert->hasOrderFor('personB@mail.com'));
             $this->assertEquals(0, $this->paymentGateway->totalCharged());
         });
 
@@ -126,8 +126,8 @@ class PurchaseTicketsTest extends TestCase {
 
         $this->assertEquals(3600, $this->paymentGateway->totalCharged());
 
-        $this->assertTrue($concert->hasOrderFor('personA@example.com'));
-        $this->assertEquals(3, $concert->ordersFor('personA@example.com')->first()->ticketCount());
+        $this->assertTrue($concert->hasOrderFor('personA@mail.com'));
+        $this->assertEquals(3, $concert->ordersFor('personA@mail.com')->first()->ticketCount());
     }
 
     /** @test * */
