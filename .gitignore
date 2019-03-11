@@ -3,6 +3,10 @@
 /public/storage
 /storage/*.key
 /vendor
+/.idea
+.editorconfig
+.phpstorm.meta.php
+_ide_helper.php
 .env
 .phpunit.result.cache
 Homestead.json
