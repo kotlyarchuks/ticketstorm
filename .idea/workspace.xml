@@ -5,14 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="94ccaa12-bee7-47e7-a354-e4a2540a0ab2" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Concert.php" afterPath="$PROJECT_DIR$/app/Concert.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/ConcertOrdersController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/ConcertOrdersController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Ticket.php" afterPath="$PROJECT_DIR$/app/Ticket.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/factories/UserFactory.php" afterPath="$PROJECT_DIR$/database/factories/UserFactory.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/migrations/2019_02_25_102101_create_tickets_table.php" afterPath="$PROJECT_DIR$/database/migrations/2019_02_25_102101_create_tickets_table.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/Feature/PurchaseTicketsTest.php" afterPath="$PROJECT_DIR$/tests/Feature/PurchaseTicketsTest.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/Unit/ConcertTest.php" afterPath="$PROJECT_DIR$/tests/Unit/ConcertTest.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/Unit/TicketTest.php" afterPath="$PROJECT_DIR$/tests/Unit/TicketTest.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -30,11 +24,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="PurchaseTicketsTest.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="PurchaseTicketsTest.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/tests/Feature/PurchaseTicketsTest.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1094">
-              <caret line="129" column="59" lean-forward="false" selection-start-line="129" selection-start-column="59" selection-end-line="129" selection-end-column="59" />
+            <state relative-caret-position="3184">
+              <caret line="127" column="11" lean-forward="true" selection-start-line="127" selection-start-column="11" selection-end-line="127" selection-end-column="11" />
               <folding>
                 <element signature="e#121#156#0#PHP" expanded="true" />
               </folding>
@@ -42,11 +36,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ConcertTest.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ConcertOrdersController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ConcertOrdersController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="409">
+              <caret line="39" column="33" lean-forward="false" selection-start-line="39" selection-start-column="33" selection-end-line="39" selection-end-column="33" />
+              <folding>
+                <element signature="e#40#79#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ConcertTest.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tests/Unit/ConcertTest.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="347">
-              <caret line="147" column="45" lean-forward="false" selection-start-line="147" selection-start-column="45" selection-end-line="147" selection-end-column="45" />
+            <state relative-caret-position="68">
+              <caret line="147" column="63" lean-forward="true" selection-start-line="147" selection-start-column="63" selection-end-line="147" selection-end-column="63" />
               <folding>
                 <element signature="e#30#46#0#PHP" expanded="true" />
               </folding>
@@ -73,18 +79,6 @@
               <caret line="30" column="70" lean-forward="false" selection-start-line="30" selection-start-column="70" selection-end-line="30" selection-end-column="70" />
               <folding>
                 <element signature="e#23#41#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ConcertOrdersController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ConcertOrdersController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="409">
-              <caret line="39" column="39" lean-forward="false" selection-start-line="39" selection-start-column="39" selection-end-line="39" selection-end-column="39" />
-              <folding>
-                <element signature="e#40#79#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -135,9 +129,9 @@
         <option value="$PROJECT_DIR$/database/factories/UserFactory.php" />
         <option value="$PROJECT_DIR$/app/Ticket.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/ConcertOrdersController.php" />
-        <option value="$PROJECT_DIR$/tests/Feature/PurchaseTicketsTest.php" />
         <option value="$PROJECT_DIR$/app/Concert.php" />
         <option value="$PROJECT_DIR$/tests/Unit/ConcertTest.php" />
+        <option value="$PROJECT_DIR$/tests/Feature/PurchaseTicketsTest.php" />
       </list>
     </option>
   </component>
@@ -320,11 +314,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="PHPUnit.ConcertTest">
-    <configuration default="false" name="FakePaymentGatewayTest.can_set_callback_to_use_before_charge" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="Tests\Unit\FakePaymentGatewayTest" file="$PROJECT_DIR$/tests/Unit/Billing/FakePaymentGatewayTest.php" method="can_set_callback_to_use_before_charge" scope="Method" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="PHPUnit.All">
     <configuration default="false" name="ConcertTest.can_reserve_available_tickets" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
       <TestRunner class="Tests\Unit\ConcertTest" file="$PROJECT_DIR$/tests/Unit/ConcertTest.php" method="can_reserve_available_tickets" scope="Method" />
       <method />
@@ -339,6 +329,10 @@
     </configuration>
     <configuration default="false" name="ConcertTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
       <TestRunner class="Tests\Unit\ConcertTest" file="$PROJECT_DIR$/tests/Unit/ConcertTest.php" scope="Class" />
+      <method />
+    </configuration>
+    <configuration default="false" name="PurchaseTicketsTest.cannot_purchase_tickets_that_already_are_reserved_by_other_person" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Feature\PurchaseTicketsTest" file="$PROJECT_DIR$/tests/Feature/PurchaseTicketsTest.php" method="cannot_purchase_tickets_that_already_are_reserved_by_other_person" scope="Method" />
       <method />
     </configuration>
     <configuration default="true" type="CodeceptionConfigurationType" factoryName="Codeception">
@@ -414,19 +408,19 @@
     </configuration>
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="PHPUnit.All" />
-      <item index="1" class="java.lang.String" itemvalue="PHPUnit.FakePaymentGatewayTest.can_set_callback_to_use_before_charge" />
-      <item index="2" class="java.lang.String" itemvalue="PHPUnit.ConcertTest.can_reserve_available_tickets" />
-      <item index="3" class="java.lang.String" itemvalue="PHPUnit.TicketTest.ticket_can_be_reserved" />
-      <item index="4" class="java.lang.String" itemvalue="PHPUnit.ConcertTest.cannot_reserve_tickets_that_already_purchased" />
-      <item index="5" class="java.lang.String" itemvalue="PHPUnit.ConcertTest" />
+      <item index="1" class="java.lang.String" itemvalue="PHPUnit.ConcertTest.can_reserve_available_tickets" />
+      <item index="2" class="java.lang.String" itemvalue="PHPUnit.TicketTest.ticket_can_be_reserved" />
+      <item index="3" class="java.lang.String" itemvalue="PHPUnit.ConcertTest.cannot_reserve_tickets_that_already_purchased" />
+      <item index="4" class="java.lang.String" itemvalue="PHPUnit.ConcertTest" />
+      <item index="5" class="java.lang.String" itemvalue="PHPUnit.PurchaseTicketsTest.cannot_purchase_tickets_that_already_are_reserved_by_other_person" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="PHPUnit.ConcertTest" />
-        <item index="1" class="java.lang.String" itemvalue="PHPUnit.ConcertTest.cannot_reserve_tickets_that_already_purchased" />
-        <item index="2" class="java.lang.String" itemvalue="PHPUnit.ConcertTest.can_reserve_available_tickets" />
-        <item index="3" class="java.lang.String" itemvalue="PHPUnit.TicketTest.ticket_can_be_reserved" />
-        <item index="4" class="java.lang.String" itemvalue="PHPUnit.FakePaymentGatewayTest.can_set_callback_to_use_before_charge" />
+        <item index="0" class="java.lang.String" itemvalue="PHPUnit.PurchaseTicketsTest.cannot_purchase_tickets_that_already_are_reserved_by_other_person" />
+        <item index="1" class="java.lang.String" itemvalue="PHPUnit.ConcertTest" />
+        <item index="2" class="java.lang.String" itemvalue="PHPUnit.ConcertTest.cannot_reserve_tickets_that_already_purchased" />
+        <item index="3" class="java.lang.String" itemvalue="PHPUnit.ConcertTest.can_reserve_available_tickets" />
+        <item index="4" class="java.lang.String" itemvalue="PHPUnit.TicketTest.ticket_can_be_reserved" />
       </list>
     </recent_temporary>
   </component>
@@ -453,15 +447,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="All - 2019.03.11 at 13h 32m 35s.xml">
-      <configuration name="All" configurationId="PHPUnitRunConfigurationType" />
-    </history-entry>
-    <history-entry file="All - 2019.03.11 at 13h 33m 29s.xml">
-      <configuration name="All" configurationId="PHPUnitRunConfigurationType" />
-    </history-entry>
-    <history-entry file="All - 2019.03.11 at 13h 34m 30s.xml">
-      <configuration name="All" configurationId="PHPUnitRunConfigurationType" />
-    </history-entry>
     <history-entry file="All - 2019.03.11 at 13h 34m 58s.xml">
       <configuration name="All" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
@@ -474,6 +459,9 @@
     <history-entry file="All - 2019.03.11 at 13h 38m 16s.xml">
       <configuration name="All" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
+    <history-entry file="All - 2019.03.11 at 17h 09m 18s.xml">
+      <configuration name="All" configurationId="PHPUnitRunConfigurationType" />
+    </history-entry>
     <history-entry file="ConcertTest - 2019.03.11 at 15h 45m 15s.xml">
       <configuration name="ConcertTest" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
@@ -483,13 +471,18 @@
     <history-entry file="ConcertTest_cannot_reserve_tickets_that_already_purchased - 2019.03.11 at 15h 44m 44s.xml">
       <configuration name="ConcertTest.cannot_reserve_tickets_that_already_purchased" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
+    <history-entry file="PurchaseTicketsTest_cannot_purchase_tickets_that_already_are_reserved_by_other_person - 2019.03.11 at 17h 08m 44s.xml">
+      <configuration name="PurchaseTicketsTest.cannot_purchase_tickets_that_already_are_reserved_by_other_person" configurationId="PHPUnitRunConfigurationType" />
+    </history-entry>
+    <history-entry file="PurchaseTicketsTest_cannot_purchase_tickets_that_already_are_reserved_by_other_person - 2019.03.11 at 17h 08m 54s.xml">
+      <configuration name="PurchaseTicketsTest.cannot_purchase_tickets_that_already_are_reserved_by_other_person" configurationId="PHPUnitRunConfigurationType" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="94371000" />
+    <option name="totallyTimeSpent" value="95650000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -497,7 +490,7 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21524201" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21524201" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -877,16 +870,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ConcertOrdersController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="409">
-          <caret line="39" column="39" lean-forward="false" selection-start-line="39" selection-start-column="39" selection-end-line="39" selection-end-column="39" />
-          <folding>
-            <element signature="e#40#79#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Ticket.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="254">
@@ -907,22 +890,32 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/Feature/PurchaseTicketsTest.php">
+    <entry file="file://$PROJECT_DIR$/tests/Unit/ConcertTest.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1094">
-          <caret line="129" column="59" lean-forward="false" selection-start-line="129" selection-start-column="59" selection-end-line="129" selection-end-column="59" />
+        <state relative-caret-position="68">
+          <caret line="147" column="63" lean-forward="true" selection-start-line="147" selection-start-column="63" selection-end-line="147" selection-end-column="63" />
           <folding>
-            <element signature="e#121#156#0#PHP" expanded="true" />
+            <element signature="e#30#46#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/Unit/ConcertTest.php">
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ConcertOrdersController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="347">
-          <caret line="147" column="45" lean-forward="false" selection-start-line="147" selection-start-column="45" selection-end-line="147" selection-end-column="45" />
+        <state relative-caret-position="409">
+          <caret line="39" column="33" lean-forward="false" selection-start-line="39" selection-start-column="33" selection-end-line="39" selection-end-column="33" />
           <folding>
-            <element signature="e#30#46#0#PHP" expanded="true" />
+            <element signature="e#40#79#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/Feature/PurchaseTicketsTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3184">
+          <caret line="127" column="11" lean-forward="true" selection-start-line="127" selection-start-column="11" selection-end-line="127" selection-end-column="11" />
+          <folding>
+            <element signature="e#121#156#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>

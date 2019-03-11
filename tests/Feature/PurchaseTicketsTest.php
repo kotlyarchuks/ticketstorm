@@ -30,7 +30,10 @@ class PurchaseTicketsTest extends TestCase {
 
     protected function buyTickets($concert, $params)
     {
-        return $this->json('POST', "/concerts/{$concert->id}/orders", $params);
+        $savedRequest = $this->app['request'];
+        $response = $this->json('POST', "/concerts/{$concert->id}/orders", $params);
+        $this->app['request'] = $savedRequest;
+        return $response;
     }
 
     protected function assertHasValidationErrors($response, $key)
