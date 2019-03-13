@@ -42,27 +42,4 @@ class OrderTest extends TestCase {
             'amount'  => 7500
         ], $result);
     }
-
-    /** @test * */
-    function order_can_be_cancelled()
-    {
-        $concert = factory(Concert::class)->create()->addTickets(5);
-        $order = $concert->buyTickets('denis@example.com', 3);
-
-        $order->cancel();
-
-        $this->assertFalse($concert->hasOrderFor('denis@example.com'));
-    }
-
-    /** @test * */
-    function tickets_are_released_if_payment_fails()
-    {
-        $concert = factory(Concert::class)->create()->addTickets(5);
-
-        $order = $concert->buyTickets('denis@example.com', 3);
-        $this->assertEquals(2, $concert->remainingTickets());
-
-        $order->cancel();
-        $this->assertEquals(5, $concert->remainingTickets());
-    }
 }
