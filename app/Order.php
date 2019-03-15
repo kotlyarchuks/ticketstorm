@@ -27,7 +27,7 @@ class Order extends Model
 {
     protected $guarded = [];
 
-    public static function forTickets($tickets, $email, $amount){
+    public static function fromReservation($email, $amount, $tickets){
         $order = Order::create([
             'email'  => $email,
             'amount' => $amount,

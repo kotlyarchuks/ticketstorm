@@ -35,13 +35,12 @@ class ConcertOrdersController extends Controller {
 
         try
         {
-            // Find tickets
-            $tickets = $concert->reserveTickets(request('tickets'));
-            $reservation = new Reservation($tickets);
+            // Create reservation with reserved tickets
+            $reservation = $concert->reserveTickets(request('tickets'), request('email'));
             // Charge
             $this->gateway->charge($reservation->totalSum(), request('token'));
             // Create order
-            $order = Order::forTickets($tickets, request('email'), $reservation->totalSum());
+            $order = $reservation->complete();
 
         } catch (NotEnoughTicketsException $e)
         {

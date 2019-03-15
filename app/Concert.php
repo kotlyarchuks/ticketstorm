@@ -105,13 +105,13 @@ class Concert extends Model {
         return $this->createOrder($email, $tickets, $tickets->sum('price'));
     }
 
-    public function reserveTickets($quantity)
+    public function reserveTickets($quantity, $email)
     {
         $tickets = $this->findTickets($quantity)->each(function($ticket){
             $ticket->reserve();
         });
 
-        return $tickets;
+        return new Reservation($tickets, $email);
     }
 
     /**
@@ -135,9 +135,10 @@ class Concert extends Model {
      * @param $tickets
      * @return Model
      */
-    public function createOrder($email, $tickets, $amount): Model
+    public function createOrder($email, $tickets): Model
     {
-        $order = Order::forTickets($tickets, $email, $amount);
+        $reservation = new Reservation($tickets, $email);
+        $order = Order::fromReservation($reservation->getEmail(), $reservation->totalSum(), $reservation->getTickets());
 
         return $order;
     }

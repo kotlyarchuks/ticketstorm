@@ -6,19 +6,39 @@ class Reservation
 {
 
     private $tickets;
+    private $email;
     /**
      * Reservation constructor.
      *
      * @param array $tickets
      */
-    public function __construct($tickets)
+    public function __construct($tickets, $email)
     {
         $this->tickets = $tickets;
+        $this->email = $email;
+    }
+
+    /**
+     * @return array
+     */
+    public function getTickets()
+    {
+        return $this->tickets;
+    }
+
+    public function getEmail()
+    {
+        return $this->email;
     }
 
     public function totalSum()
     {
         return $this->tickets->sum('price');
+    }
+
+    public function complete()
+    {
+        return Order::fromReservation($this->getEmail(), $this->totalSum(), $this->getTickets());
     }
 
     public function cancel()

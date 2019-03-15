@@ -4,6 +4,7 @@ namespace Tests\Unit;
 
 use App\Concert;
 use App\Exceptions\NotEnoughTicketsException;
+use App\Reservation;
 use Carbon\Carbon;
 use Illuminate\Foundation\Testing\DatabaseMigrations;
 use Tests\TestCase;
@@ -124,13 +125,16 @@ class ConcertTest extends TestCase
     }
 
     /** @test * */
-    function can_reserve_available_tickets()
+    function can_reserve_available_tickets_and_get_reservation_back()
     {
         $concert = factory(Concert::class)->create()->addTickets(10);
 
-        $tickets = $concert->reserveTickets(6);
+        $reservation = $concert->reserveTickets(6, 'denis@example.com');
 
-        $this->assertCount(6, $tickets);
+        $this->assertInstanceOf(Reservation::class, $reservation);
+
+        $this->assertCount(6, $reservation->getTickets());
+        $this->assertEquals('denis@example.com', $reservation->getEmail());
         $this->assertEquals(4, $concert->remainingTickets());
     }
 
@@ -142,7 +146,7 @@ class ConcertTest extends TestCase
         $concert->buyTickets('denis@example.com', 6);
 
         try {
-            $concert->reserveTickets(5);
+            $concert->reserveTickets(5, 'sasha@example.com');
         } catch(NotEnoughTicketsException $e) {
             $this->assertFalse($concert->hasOrderFor('sasha@example.com'));
             $this->assertEquals(4, $concert->remainingTickets());
