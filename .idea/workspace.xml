@@ -26,8 +26,8 @@
       <file leaf-file-name="PurchaseTicketsTest.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tests/Feature/PurchaseTicketsTest.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-4891">
-              <caret line="33" column="64" lean-forward="false" selection-start-line="33" selection-start-column="64" selection-end-line="33" selection-end-column="64" />
+            <state relative-caret-position="488">
+              <caret line="202" column="32" lean-forward="true" selection-start-line="202" selection-start-column="32" selection-end-line="202" selection-end-column="35" />
               <folding>
                 <element signature="e#121#156#0#PHP" expanded="true" />
               </folding>
@@ -35,55 +35,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="OrderTest.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/tests/Unit/OrderTest.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="317">
-              <caret line="22" column="39" lean-forward="false" selection-start-line="22" selection-start-column="39" selection-end-line="22" selection-end-column="39" />
-              <folding>
-                <element signature="e#30#46#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Order.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Order.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="224">
-              <caret line="32" column="32" lean-forward="true" selection-start-line="32" selection-start-column="32" selection-end-line="32" selection-end-column="32" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Concert.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Concert.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="348">
-              <caret line="137" column="48" lean-forward="false" selection-start-line="137" selection-start-column="48" selection-end-line="137" selection-end-column="48" />
-              <folding>
-                <element signature="e#23#68#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Reservation.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Reservation.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="224">
-              <caret line="40" column="37" lean-forward="true" selection-start-line="40" selection-start-column="37" selection-end-line="40" selection-end-column="37" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ConcertOrdersController.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ConcertOrdersController.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ConcertOrdersController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="286">
-              <caret line="39" column="21" lean-forward="true" selection-start-line="39" selection-start-column="21" selection-end-line="39" selection-end-column="21" />
+            <state relative-caret-position="317">
+              <caret line="43" column="9" lean-forward="true" selection-start-line="43" selection-start-column="9" selection-end-line="43" selection-end-column="9" />
               <folding>
                 <element signature="e#40#79#0#PHP" expanded="true" />
               </folding>
@@ -94,24 +50,22 @@
       <file leaf-file-name="ReservationTest.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tests/Unit/ReservationTest.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="38">
-              <caret line="61" column="54" lean-forward="true" selection-start-line="61" selection-start-column="54" selection-end-line="61" selection-end-column="54" />
+            <state relative-caret-position="379">
+              <caret line="67" column="54" lean-forward="false" selection-start-line="67" selection-start-column="54" selection-end-line="67" selection-end-column="54" />
               <folding>
-                <element signature="e#30#46#0#PHP" expanded="true" />
-                <marker date="1552659027164" expanded="true" signature="574:610" ph="{...}" />
+                <element signature="e#30#65#0#PHP" expanded="true" />
+                <marker date="1552915498228" expanded="true" signature="610:646" ph="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ConcertTest.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tests/Unit/ConcertTest.php">
+      <file leaf-file-name="Reservation.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Reservation.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="472">
-              <caret line="68" column="30" lean-forward="true" selection-start-line="68" selection-start-column="30" selection-end-line="68" selection-end-column="30" />
-              <folding>
-                <element signature="e#30#46#0#PHP" expanded="true" />
-              </folding>
+            <state relative-caret-position="224">
+              <caret line="42" column="8" lean-forward="false" selection-start-line="42" selection-start-column="8" selection-end-line="42" selection-end-column="8" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -159,12 +113,12 @@
         <option value="$PROJECT_DIR$/tests/Unit/TicketTest.php" />
         <option value="$PROJECT_DIR$/app/Ticket.php" />
         <option value="$PROJECT_DIR$/tests/Unit/ConcertTest.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/ConcertOrdersController.php" />
         <option value="$PROJECT_DIR$/app/Order.php" />
-        <option value="$PROJECT_DIR$/app/Reservation.php" />
         <option value="$PROJECT_DIR$/tests/Unit/OrderTest.php" />
         <option value="$PROJECT_DIR$/app/Concert.php" />
         <option value="$PROJECT_DIR$/tests/Unit/ReservationTest.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/ConcertOrdersController.php" />
+        <option value="$PROJECT_DIR$/app/Reservation.php" />
       </list>
     </option>
   </component>
@@ -316,10 +270,6 @@
     </option>
   </component>
   <component name="RunManager" selected="PHPUnit.All">
-    <configuration default="false" name="ReservationTest.can_retrieve_tickets_from_reservation" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="Tests\Unit\ReservationTest" file="$PROJECT_DIR$/tests/Unit/ReservationTest.php" method="can_retrieve_tickets_from_reservation" scope="Method" />
-      <method />
-    </configuration>
     <configuration default="false" name="ConcertTest.can_reserve_available_tickets_and_get_reservation_back" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
       <TestRunner class="Tests\Unit\ConcertTest" file="$PROJECT_DIR$/tests/Unit/ConcertTest.php" method="can_reserve_available_tickets_and_get_reservation_back" scope="Method" />
       <method />
@@ -334,6 +284,10 @@
     </configuration>
     <configuration default="false" name="ReservationTest.can_create_order_from_reservation" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
       <TestRunner class="Tests\Unit\ReservationTest" file="$PROJECT_DIR$/tests/Unit/ReservationTest.php" method="can_create_order_from_reservation" scope="Method" />
+      <method />
+    </configuration>
+    <configuration default="false" name="ReservationTest.can_create_order_by_completing_reservation" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Unit\ReservationTest" file="$PROJECT_DIR$/tests/Unit/ReservationTest.php" method="can_create_order_by_completing_reservation" scope="Method" />
       <method />
     </configuration>
     <configuration default="true" type="JavaScriptTestRunnerJest" factoryName="Jest">
@@ -381,19 +335,19 @@
     </configuration>
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="PHPUnit.All" />
-      <item index="1" class="java.lang.String" itemvalue="PHPUnit.ReservationTest.can_retrieve_tickets_from_reservation" />
-      <item index="2" class="java.lang.String" itemvalue="PHPUnit.ConcertTest.can_reserve_available_tickets_and_get_reservation_back" />
-      <item index="3" class="java.lang.String" itemvalue="PHPUnit.ReservationTest.can_retrieve_email_from_reservation" />
-      <item index="4" class="java.lang.String" itemvalue="PHPUnit.OrderTest.can_generate_order_from_reservation" />
-      <item index="5" class="java.lang.String" itemvalue="PHPUnit.ReservationTest.can_create_order_from_reservation" />
+      <item index="1" class="java.lang.String" itemvalue="PHPUnit.ConcertTest.can_reserve_available_tickets_and_get_reservation_back" />
+      <item index="2" class="java.lang.String" itemvalue="PHPUnit.ReservationTest.can_retrieve_email_from_reservation" />
+      <item index="3" class="java.lang.String" itemvalue="PHPUnit.OrderTest.can_generate_order_from_reservation" />
+      <item index="4" class="java.lang.String" itemvalue="PHPUnit.ReservationTest.can_create_order_from_reservation" />
+      <item index="5" class="java.lang.String" itemvalue="PHPUnit.ReservationTest.can_create_order_by_completing_reservation" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="PHPUnit.OrderTest.can_generate_order_from_reservation" />
-        <item index="1" class="java.lang.String" itemvalue="PHPUnit.ReservationTest.can_create_order_from_reservation" />
-        <item index="2" class="java.lang.String" itemvalue="PHPUnit.ConcertTest.can_reserve_available_tickets_and_get_reservation_back" />
-        <item index="3" class="java.lang.String" itemvalue="PHPUnit.ReservationTest.can_retrieve_email_from_reservation" />
-        <item index="4" class="java.lang.String" itemvalue="PHPUnit.ReservationTest.can_retrieve_tickets_from_reservation" />
+        <item index="0" class="java.lang.String" itemvalue="PHPUnit.ReservationTest.can_create_order_by_completing_reservation" />
+        <item index="1" class="java.lang.String" itemvalue="PHPUnit.OrderTest.can_generate_order_from_reservation" />
+        <item index="2" class="java.lang.String" itemvalue="PHPUnit.ReservationTest.can_create_order_from_reservation" />
+        <item index="3" class="java.lang.String" itemvalue="PHPUnit.ConcertTest.can_reserve_available_tickets_and_get_reservation_back" />
+        <item index="4" class="java.lang.String" itemvalue="PHPUnit.ReservationTest.can_retrieve_email_from_reservation" />
       </list>
     </recent_temporary>
   </component>
@@ -432,23 +386,23 @@
     <history-entry file="All - 2019.03.15 at 16h 07m 30s.xml">
       <configuration name="All" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
+    <history-entry file="All - 2019.03.18 at 15h 28m 29s.xml">
+      <configuration name="All" configurationId="PHPUnitRunConfigurationType" />
+    </history-entry>
+    <history-entry file="All - 2019.03.18 at 15h 33m 16s.xml">
+      <configuration name="All" configurationId="PHPUnitRunConfigurationType" />
+    </history-entry>
+    <history-entry file="All - 2019.03.18 at 15h 33m 53s.xml">
+      <configuration name="All" configurationId="PHPUnitRunConfigurationType" />
+    </history-entry>
     <history-entry file="OrderTest_can_generate_order_from_reservation - 2019.03.15 at 16h 06m 02s.xml">
       <configuration name="OrderTest.can_generate_order_from_reservation" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="ReservationTest_can_create_order_from_reservation - 2019.03.15 at 15h 38m 35s.xml">
-      <configuration name="ReservationTest.can_create_order_from_reservation" configurationId="PHPUnitRunConfigurationType" />
+    <history-entry file="ReservationTest_can_create_order_by_completing_reservation - 2019.03.18 at 15h 25m 01s.xml">
+      <configuration name="ReservationTest.can_create_order_by_completing_reservation" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="ReservationTest_can_create_order_from_reservation - 2019.03.15 at 15h 42m 47s.xml">
-      <configuration name="ReservationTest.can_create_order_from_reservation" configurationId="PHPUnitRunConfigurationType" />
-    </history-entry>
-    <history-entry file="ReservationTest_can_create_order_from_reservation - 2019.03.15 at 15h 42m 54s.xml">
-      <configuration name="ReservationTest.can_create_order_from_reservation" configurationId="PHPUnitRunConfigurationType" />
-    </history-entry>
-    <history-entry file="ReservationTest_can_create_order_from_reservation - 2019.03.15 at 15h 43m 13s.xml">
-      <configuration name="ReservationTest.can_create_order_from_reservation" configurationId="PHPUnitRunConfigurationType" />
-    </history-entry>
-    <history-entry file="ReservationTest_can_create_order_from_reservation - 2019.03.15 at 15h 43m 27s.xml">
-      <configuration name="ReservationTest.can_create_order_from_reservation" configurationId="PHPUnitRunConfigurationType" />
+    <history-entry file="ReservationTest_can_create_order_by_completing_reservation - 2019.03.18 at 15h 27m 29s.xml">
+      <configuration name="ReservationTest.can_create_order_by_completing_reservation" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
     <history-entry file="ReservationTest_can_create_order_from_reservation - 2019.03.15 at 15h 43m 34s.xml">
       <configuration name="ReservationTest.can_create_order_from_reservation" configurationId="PHPUnitRunConfigurationType" />
@@ -468,7 +422,7 @@
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32955715" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21421215" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21421215" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
@@ -492,13 +446,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/resources/js/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="682">
-          <caret line="22" column="80" lean-forward="false" selection-start-line="22" selection-start-column="80" selection-end-line="22" selection-end-column="80" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tests/Unit/ConcertTest.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1550">
@@ -764,6 +711,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="376">
           <caret line="31" column="29" lean-forward="true" selection-start-line="31" selection-start-column="29" selection-end-line="31" selection-end-column="29" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -803,16 +751,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/Feature/PurchaseTicketsTest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4891">
-          <caret line="33" column="64" lean-forward="false" selection-start-line="33" selection-start-column="64" selection-end-line="33" selection-end-column="64" />
-          <folding>
-            <element signature="e#121#156#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tests/Unit/ConcertTest.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="472">
@@ -841,12 +779,41 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ConcertOrdersController.php">
+    <entry file="file://$PROJECT_DIR$/tests/Unit/OrderTest.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="39" column="21" lean-forward="true" selection-start-line="39" selection-start-column="21" selection-end-line="39" selection-end-column="21" />
+        <state relative-caret-position="317">
+          <caret line="22" column="39" lean-forward="false" selection-start-line="22" selection-start-column="39" selection-end-line="22" selection-end-column="39" />
           <folding>
-            <element signature="e#40#79#0#PHP" expanded="true" />
+            <element signature="e#30#46#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/Unit/ReservationTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="379">
+          <caret line="67" column="54" lean-forward="false" selection-start-line="67" selection-start-column="54" selection-end-line="67" selection-end-column="54" />
+          <folding>
+            <element signature="e#30#65#0#PHP" expanded="true" />
+            <marker date="1552915498228" expanded="true" signature="610:646" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Support/Traits/Macroable.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="99" column="0" lean-forward="false" selection-start-line="99" selection-start-column="0" selection-end-line="99" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/Feature/PurchaseTicketsTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="488">
+          <caret line="202" column="32" lean-forward="true" selection-start-line="202" selection-start-column="32" selection-end-line="202" selection-end-column="35" />
+          <folding>
+            <element signature="e#121#156#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -854,28 +821,17 @@
     <entry file="file://$PROJECT_DIR$/app/Reservation.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="224">
-          <caret line="40" column="37" lean-forward="true" selection-start-line="40" selection-start-column="37" selection-end-line="40" selection-end-column="37" />
+          <caret line="42" column="8" lean-forward="false" selection-start-line="42" selection-start-column="8" selection-end-line="42" selection-end-column="8" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/Unit/ReservationTest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="61" column="54" lean-forward="true" selection-start-line="61" selection-start-column="54" selection-end-line="61" selection-end-column="54" />
-          <folding>
-            <element signature="e#30#46#0#PHP" expanded="true" />
-            <marker date="1552659027164" expanded="true" signature="574:610" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/Unit/OrderTest.php">
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ConcertOrdersController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="317">
-          <caret line="22" column="39" lean-forward="false" selection-start-line="22" selection-start-column="39" selection-end-line="22" selection-end-column="39" />
+          <caret line="43" column="9" lean-forward="true" selection-start-line="43" selection-start-column="9" selection-end-line="43" selection-end-column="9" />
           <folding>
-            <element signature="e#30#46#0#PHP" expanded="true" />
+            <element signature="e#40#79#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>

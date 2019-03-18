@@ -2,6 +2,8 @@
 
 namespace App;
 
+use App\Billing\FailedPaymentException;
+
 class Reservation
 {
 
@@ -36,8 +38,9 @@ class Reservation
         return $this->tickets->sum('price');
     }
 
-    public function complete()
+    public function complete($paymentGateway, $paymentToken)
     {
+        $paymentGateway->charge($this->totalSum(), $paymentToken);
         return Order::fromReservation($this->getEmail(), $this->totalSum(), $this->getTickets());
     }
 
