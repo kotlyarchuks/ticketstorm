@@ -16,7 +16,7 @@ class StripePaymentGatewayTest extends TestCase {
     function purchases_with_valid_token_are_successful()
     {
         //create payment gateway
-        $gateway = new StripePaymentGateway();
+        $gateway = new StripePaymentGateway(config('services.stripe.secret'));
 
 
         $token = \Stripe\Token::create([
@@ -31,9 +31,11 @@ class StripePaymentGatewayTest extends TestCase {
         )->id;
 
         //charge
-        $response = $gateway->charge(2400, $token);
+        $gateway->charge(2400, $token);
+
+        $charge = \Stripe\Charge::all(['limit' => 1], ['api_key' => config('services.stripe.secret')])->data[0];
 
         //assert that charge was successful
-        $this->assertEquals("succeeded", $response->status);
+        $this->assertEquals(2400, $charge->amount);
     }
 }

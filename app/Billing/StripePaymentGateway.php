@@ -4,14 +4,22 @@ namespace App\Billing;
 
 class StripePaymentGateway implements PaymentGateway {
 
+
+    /**
+     * StripePaymentGateway constructor.
+     */
+    public function __construct($apiKey)
+    {
+        $this->apiKey = $apiKey;
+    }
+
     public function charge($amount, $token)
     {
-        return \Stripe\Charge::create([
+        \Stripe\Charge::create([
             "amount"      => $amount,
             "currency"    => "usd",
             "source"      => $token,
             "description" => "Test charge"
-        ],
-            ['api_key' => config('services.stripe.secret')]);
+        ], $this->apiKey);
     }
 }
