@@ -35,9 +35,7 @@ class ConcertOrdersController extends Controller {
 
         try
         {
-            // Create reservation with reserved tickets
             $reservation = $concert->reserveTickets(request('tickets'), request('email'));
-            // Charge and create order
             $order = $reservation->complete($this->gateway, request('token'));
 
         } catch (NotEnoughTicketsException $e)

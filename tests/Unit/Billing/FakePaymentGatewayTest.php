@@ -4,11 +4,8 @@ namespace Tests\Unit;
 
 use App\Billing\FailedPaymentException;
 use App\Billing\FakePaymentGateway;
-use App\Concert;
-use Carbon\Carbon;
 use Illuminate\Foundation\Testing\DatabaseMigrations;
 use Tests\TestCase;
-use Illuminate\Foundation\Testing\RefreshDatabase;
 
 class FakePaymentGatewayTest extends TestCase {
 
