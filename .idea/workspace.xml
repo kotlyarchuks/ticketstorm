@@ -23,58 +23,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="PurchaseTicketsTest.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tests/Feature/PurchaseTicketsTest.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="488">
-              <caret line="202" column="32" lean-forward="false" selection-start-line="202" selection-start-column="32" selection-end-line="202" selection-end-column="35" />
-              <folding>
-                <element signature="e#121#156#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ConcertOrdersController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ConcertOrdersController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="472">
-              <caret line="39" column="0" lean-forward="false" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
-              <folding>
-                <element signature="e#40#79#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="StripePaymentGatewayTest.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="StripePaymentGatewayTest.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/tests/Unit/Billing/StripePaymentGatewayTest.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="379">
-              <caret line="37" column="0" lean-forward="true" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
+            <state relative-caret-position="372">
+              <caret line="54" column="24" lean-forward="false" selection-start-line="54" selection-start-column="24" selection-end-line="54" selection-end-column="24" />
               <folding>
                 <element signature="e#30#69#0#PHP" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="StripePaymentGateway.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/Billing/StripePaymentGateway.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="496">
-              <caret line="20" column="30" lean-forward="false" selection-start-line="20" selection-start-column="30" selection-end-line="20" selection-end-column="30" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FakePaymentGateway.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Billing/FakePaymentGateway.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="224">
-              <caret line="28" column="51" lean-forward="true" selection-start-line="28" selection-start-column="51" selection-end-line="28" selection-end-column="51" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -128,8 +84,8 @@
         <option value="$PROJECT_DIR$/app/Http/Controllers/ConcertOrdersController.php" />
         <option value="$PROJECT_DIR$/tests/Unit/Billing/FakePaymentGatewayTest.php" />
         <option value="$PROJECT_DIR$/.env" />
-        <option value="$PROJECT_DIR$/tests/Unit/Billing/StripePaymentGatewayTest.php" />
         <option value="$PROJECT_DIR$/app/Billing/StripePaymentGateway.php" />
+        <option value="$PROJECT_DIR$/tests/Unit/Billing/StripePaymentGatewayTest.php" />
       </list>
     </option>
   </component>
@@ -172,6 +128,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -232,8 +190,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -370,27 +326,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="All - 2019.03.19 at 16h 01m 12s.xml">
-      <configuration name="All" configurationId="PHPUnitRunConfigurationType" />
-    </history-entry>
-    <history-entry file="StripePaymentGatewayTest_purchases_with_valid_token_are_successful - 2019.03.18 at 17h 38m 29s.xml">
-      <configuration name="StripePaymentGatewayTest.purchases_with_valid_token_are_successful" configurationId="PHPUnitRunConfigurationType" />
-    </history-entry>
-    <history-entry file="StripePaymentGatewayTest_purchases_with_valid_token_are_successful - 2019.03.18 at 17h 38m 51s.xml">
-      <configuration name="StripePaymentGatewayTest.purchases_with_valid_token_are_successful" configurationId="PHPUnitRunConfigurationType" />
-    </history-entry>
-    <history-entry file="StripePaymentGatewayTest_purchases_with_valid_token_are_successful - 2019.03.18 at 17h 39m 00s.xml">
-      <configuration name="StripePaymentGatewayTest.purchases_with_valid_token_are_successful" configurationId="PHPUnitRunConfigurationType" />
-    </history-entry>
-    <history-entry file="StripePaymentGatewayTest_purchases_with_valid_token_are_successful - 2019.03.18 at 17h 40m 41s.xml">
-      <configuration name="StripePaymentGatewayTest.purchases_with_valid_token_are_successful" configurationId="PHPUnitRunConfigurationType" />
-    </history-entry>
-    <history-entry file="StripePaymentGatewayTest_purchases_with_valid_token_are_successful - 2019.03.18 at 17h 46m 12s.xml">
-      <configuration name="StripePaymentGatewayTest.purchases_with_valid_token_are_successful" configurationId="PHPUnitRunConfigurationType" />
-    </history-entry>
-    <history-entry file="StripePaymentGatewayTest_purchases_with_valid_token_are_successful - 2019.03.18 at 17h 46m 29s.xml">
-      <configuration name="StripePaymentGatewayTest.purchases_with_valid_token_are_successful" configurationId="PHPUnitRunConfigurationType" />
-    </history-entry>
     <history-entry file="StripePaymentGatewayTest_purchases_with_valid_token_are_successful - 2019.03.19 at 17h 35m 55s.xml">
       <configuration name="StripePaymentGatewayTest.purchases_with_valid_token_are_successful" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
@@ -398,6 +333,27 @@
       <configuration name="StripePaymentGatewayTest.purchases_with_valid_token_are_successful" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
     <history-entry file="StripePaymentGatewayTest_purchases_with_valid_token_are_successful - 2019.03.19 at 17h 36m 22s.xml">
+      <configuration name="StripePaymentGatewayTest.purchases_with_valid_token_are_successful" configurationId="PHPUnitRunConfigurationType" />
+    </history-entry>
+    <history-entry file="StripePaymentGatewayTest_purchases_with_valid_token_are_successful - 2019.03.20 at 17h 07m 03s.xml">
+      <configuration name="StripePaymentGatewayTest.purchases_with_valid_token_are_successful" configurationId="PHPUnitRunConfigurationType" />
+    </history-entry>
+    <history-entry file="StripePaymentGatewayTest_purchases_with_valid_token_are_successful - 2019.03.20 at 17h 08m 21s.xml">
+      <configuration name="StripePaymentGatewayTest.purchases_with_valid_token_are_successful" configurationId="PHPUnitRunConfigurationType" />
+    </history-entry>
+    <history-entry file="StripePaymentGatewayTest_purchases_with_valid_token_are_successful - 2019.03.20 at 17h 09m 51s.xml">
+      <configuration name="StripePaymentGatewayTest.purchases_with_valid_token_are_successful" configurationId="PHPUnitRunConfigurationType" />
+    </history-entry>
+    <history-entry file="StripePaymentGatewayTest_purchases_with_valid_token_are_successful - 2019.03.20 at 17h 13m 30s.xml">
+      <configuration name="StripePaymentGatewayTest.purchases_with_valid_token_are_successful" configurationId="PHPUnitRunConfigurationType" />
+    </history-entry>
+    <history-entry file="StripePaymentGatewayTest_purchases_with_valid_token_are_successful - 2019.03.20 at 17h 16m 36s.xml">
+      <configuration name="StripePaymentGatewayTest.purchases_with_valid_token_are_successful" configurationId="PHPUnitRunConfigurationType" />
+    </history-entry>
+    <history-entry file="StripePaymentGatewayTest_purchases_with_valid_token_are_successful - 2019.03.20 at 17h 16m 52s.xml">
+      <configuration name="StripePaymentGatewayTest.purchases_with_valid_token_are_successful" configurationId="PHPUnitRunConfigurationType" />
+    </history-entry>
+    <history-entry file="StripePaymentGatewayTest_purchases_with_valid_token_are_successful - 2019.03.20 at 17h 17m 31s.xml">
       <configuration name="StripePaymentGatewayTest.purchases_with_valid_token_are_successful" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
   </component>
@@ -412,10 +368,9 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32955715" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21421215" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21421215" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
@@ -425,6 +380,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32955715" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -435,7 +391,9 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
@@ -495,7 +453,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="123">
           <caret line="707" column="9" lean-forward="false" selection-start-line="707" selection-start-column="9" selection-end-line="707" selection-end-column="9" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -503,7 +460,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1581">
           <caret line="54" column="0" lean-forward="false" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -547,7 +503,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="309">
           <caret line="126" column="20" lean-forward="false" selection-start-line="126" selection-start-column="20" selection-end-line="126" selection-end-column="20" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -655,7 +610,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="372">
           <caret line="17" column="42" lean-forward="false" selection-start-line="17" selection-start-column="42" selection-end-line="17" selection-end-column="42" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -663,7 +617,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="502">
           <caret line="56" column="32" lean-forward="false" selection-start-line="56" selection-start-column="32" selection-end-line="56" selection-end-column="32" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -672,7 +625,7 @@
         <state relative-caret-position="658">
           <caret line="38" column="5" lean-forward="false" selection-start-line="38" selection-start-column="5" selection-end-line="38" selection-end-column="5" />
           <folding>
-            <element signature="e#30#46#0#PHP" expanded="true" />
+            <element signature="e#30#46#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -692,7 +645,7 @@
         <state relative-caret-position="472">
           <caret line="68" column="30" lean-forward="true" selection-start-line="68" selection-start-column="30" selection-end-line="68" selection-end-column="30" />
           <folding>
-            <element signature="e#30#46#0#PHP" expanded="true" />
+            <element signature="e#30#46#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -720,7 +673,7 @@
         <state relative-caret-position="317">
           <caret line="22" column="39" lean-forward="false" selection-start-line="22" selection-start-column="39" selection-end-line="22" selection-end-column="39" />
           <folding>
-            <element signature="e#30#46#0#PHP" expanded="true" />
+            <element signature="e#30#46#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -730,7 +683,7 @@
         <state relative-caret-position="379">
           <caret line="67" column="54" lean-forward="false" selection-start-line="67" selection-start-column="54" selection-end-line="67" selection-end-column="54" />
           <folding>
-            <element signature="e#30#65#0#PHP" expanded="true" />
+            <element signature="e#30#65#0#PHP" expanded="false" />
             <marker date="1552915498228" expanded="true" signature="610:646" ph="{...}" />
           </folding>
         </state>
@@ -740,7 +693,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="99" column="0" lean-forward="false" selection-start-line="99" selection-start-column="0" selection-end-line="99" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -749,7 +701,7 @@
         <state relative-caret-position="488">
           <caret line="202" column="32" lean-forward="false" selection-start-line="202" selection-start-column="32" selection-end-line="202" selection-end-column="35" />
           <folding>
-            <element signature="e#121#156#0#PHP" expanded="true" />
+            <element signature="e#121#156#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -777,7 +729,7 @@
         <state relative-caret-position="434">
           <caret line="14" column="54" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="54" />
           <folding>
-            <element signature="e#30#69#0#PHP" expanded="true" />
+            <element signature="e#30#69#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -786,7 +738,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="570">
           <caret line="41" column="29" lean-forward="false" selection-start-line="41" selection-start-column="29" selection-end-line="41" selection-end-column="29" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -794,7 +745,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="379">
           <caret line="35" column="31" lean-forward="false" selection-start-line="35" selection-start-column="31" selection-end-line="35" selection-end-column="31" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -814,21 +764,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/Unit/Billing/StripePaymentGatewayTest.php">
+    <entry file="file://$PROJECT_DIR$/app/Billing/StripePaymentGateway.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="379">
-          <caret line="37" column="0" lean-forward="true" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
-          <folding>
-            <element signature="e#30#69#0#PHP" expanded="true" />
-          </folding>
+        <state relative-caret-position="310">
+          <caret line="10" column="20" lean-forward="false" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Billing/StripePaymentGateway.php">
+    <entry file="file://$PROJECT_DIR$/tests/Unit/Billing/StripePaymentGatewayTest.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="496">
-          <caret line="20" column="30" lean-forward="false" selection-start-line="20" selection-start-column="30" selection-end-line="20" selection-end-column="30" />
-          <folding />
+        <state relative-caret-position="372">
+          <caret line="54" column="24" lean-forward="false" selection-start-line="54" selection-start-column="24" selection-end-line="54" selection-end-column="24" />
+          <folding>
+            <element signature="e#30#69#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
