@@ -15,11 +15,16 @@ class StripePaymentGateway implements PaymentGateway {
 
     public function charge($amount, $token)
     {
-        \Stripe\Charge::create([
-            "amount"      => $amount,
-            "currency"    => "usd",
-            "source"      => $token,
-            "description" => "Test charge"
-        ], $this->apiKey);
+        try
+        {
+            \Stripe\Charge::create([
+                "amount"      => $amount,
+                "currency"    => "usd",
+                "source"      => $token,
+                "description" => "Test charge"
+            ], $this->apiKey);
+        } catch (\Stripe\Error\InvalidRequest $e){
+            throw new FailedPaymentException();
+        }
     }
 }
