@@ -24,6 +24,7 @@ class StripePaymentGateway implements PaymentGateway {
                 "description" => "Test charge"
             ], $this->apiKey);
         } catch (\Stripe\Error\InvalidRequest $e){
+            dd($e);
             throw new FailedPaymentException();
         }
     }

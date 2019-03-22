@@ -1802,15 +1802,39 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
+  props: ['price', 'concertTitle', 'concertId'],
   data: function data() {
     return {
-      image: 'https://i.imgur.com/HhqxVCW.jpg',
-      name: 'Shut up and take my money!',
-      description: 'Cats are the best dog!',
-      currency: 'PHP',
-      amount: 99999
+      name: 'Ticketstorm',
+      currency: 'usd',
+      quantity: 1
     };
+  },
+  computed: {
+    description: function description() {
+      if (this.quantity > 1) {
+        return "".concat(this.quantity, " tickets to ").concat(this.concertTitle);
+      }
+
+      return "One ticket to ".concat(this.concertTitle);
+    },
+    totalPrice: function totalPrice() {
+      return this.quantity * this.price;
+    },
+    priceInDollars: function priceInDollars() {
+      return (this.price / 100).toFixed(2);
+    },
+    totalPriceInDollars: function totalPriceInDollars() {
+      return (this.totalPrice / 100).toFixed(2);
+    }
   },
   methods: {
     checkout: function () {
@@ -1830,8 +1854,18 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
                 _ref = _context.sent;
                 token = _ref.token;
                 args = _ref.args;
+                console.log(token);
+                axios.post("/concerts/".concat(this.concertId, "/orders"), {
+                  email: token.email,
+                  tickets: this.quantity,
+                  token: token.id
+                }).then(function (response) {
+                  console.log('Charge was successful');
+                }).catch(function (response) {
+                  console.log(response);
+                });
 
-              case 5:
+              case 7:
               case "end":
                 return _context.stop();
             }
@@ -1845,10 +1879,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 
       return checkout;
     }(),
-    done: function done(_ref2) {// token - is the token object
-      // args - is an object containing the billing and shipping address if enabled
-      // do stuff...
-
+    done: function done(_ref2) {
       var token = _ref2.token,
           args = _ref2.args;
     },
@@ -37688,14 +37719,42 @@ var render = function() {
   return _c(
     "div",
     [
+      _c("div", { staticClass: "col col-xs-6" }, [
+        _c("div", { staticClass: "form-group m-xs-b-4" }, [
+          _c("label", { staticClass: "form-label" }, [
+            _vm._v("\n                Qty\n            ")
+          ]),
+          _vm._v(" "),
+          _c("input", {
+            directives: [
+              {
+                name: "model",
+                rawName: "v-model",
+                value: _vm.quantity,
+                expression: "quantity"
+              }
+            ],
+            staticClass: "form-control",
+            domProps: { value: _vm.quantity },
+            on: {
+              input: function($event) {
+                if ($event.target.composing) {
+                  return
+                }
+                _vm.quantity = $event.target.value
+              }
+            }
+          })
+        ])
+      ]),
+      _vm._v(" "),
       _c("vue-stripe-checkout", {
         ref: "checkoutRef",
         attrs: {
-          image: _vm.image,
           name: _vm.name,
           description: _vm.description,
           currency: _vm.currency,
-          amount: _vm.amount,
+          amount: _vm.totalPrice,
           "allow-remember-me": false
         },
         on: {
@@ -50102,14 +50161,14 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
  * all outgoing HTTP requests automatically have it attached. This is just
  * a simple convenience so we don't have to attach every token manually.
  */
+// let token = document.head.querySelector('meta[name="csrf-token"]');
+//
+// if (token) {
+//     window.axios.defaults.headers.common['X-CSRF-TOKEN'] = token.content;
+// } else {
+//     console.error('CSRF token not found: https://laravel.com/docs/csrf#csrf-x-csrf-token');
+// }
 
-var token = document.head.querySelector('meta[name="csrf-token"]');
-
-if (token) {
-  window.axios.defaults.headers.common['X-CSRF-TOKEN'] = token.content;
-} else {
-  console.error('CSRF token not found: https://laravel.com/docs/csrf#csrf-x-csrf-token');
-}
 /**
  * Echo exposes an expressive API for subscribing to channels and listening
  * for events that are broadcast by Laravel. Echo and event broadcasting
@@ -50130,15 +50189,14 @@ if (token) {
 /*!****************************************************!*\
   !*** ./resources/js/components/TicketCheckout.vue ***!
   \****************************************************/
-/*! no static exports found */
+/*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _TicketCheckout_vue_vue_type_template_id_ad419ac6___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./TicketCheckout.vue?vue&type=template&id=ad419ac6& */ "./resources/js/components/TicketCheckout.vue?vue&type=template&id=ad419ac6&");
 /* harmony import */ var _TicketCheckout_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./TicketCheckout.vue?vue&type=script&lang=js& */ "./resources/js/components/TicketCheckout.vue?vue&type=script&lang=js&");
-/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _TicketCheckout_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__) if(__WEBPACK_IMPORT_KEY__ !== 'default') (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _TicketCheckout_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__[key]; }) }(__WEBPACK_IMPORT_KEY__));
-/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
 
 
 
@@ -50168,7 +50226,7 @@ component.options.__file = "resources/js/components/TicketCheckout.vue"
 /*!*****************************************************************************!*\
   !*** ./resources/js/components/TicketCheckout.vue?vue&type=script&lang=js& ***!
   \*****************************************************************************/
-/*! no static exports found */
+/*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";

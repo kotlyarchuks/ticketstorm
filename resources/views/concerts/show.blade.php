@@ -31,7 +31,7 @@
                 <p class="secondary-text">{{ $concert->additional_info }}</p>
             </div>
         </div>
-        <ticket-checkout></ticket-checkout>
+        <ticket-checkout :price="{{$concert->price}}" concert-title="{{$concert->title}}" :concert-id="{{$concert->id}}"></ticket-checkout>
     </div>
 @endsection
 
