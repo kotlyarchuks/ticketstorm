@@ -26,8 +26,8 @@
       <file leaf-file-name="StripePaymentGatewayTest.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tests/Unit/Billing/StripePaymentGatewayTest.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="463">
-              <caret line="67" column="25" lean-forward="false" selection-start-line="67" selection-start-column="25" selection-end-line="67" selection-end-column="25" />
+            <state relative-caret-position="224">
+              <caret line="29" column="8" lean-forward="false" selection-start-line="29" selection-start-column="8" selection-end-line="39" selection-end-column="54" />
               <folding>
                 <element signature="e#30#69#0#PHP" expanded="true" />
               </folding>
@@ -35,53 +35,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PurchaseTicketsTest.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tests/Feature/PurchaseTicketsTest.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="124">
-              <caret line="42" column="5" lean-forward="true" selection-start-line="42" selection-start-column="5" selection-end-line="42" selection-end-column="5" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ConcertOrdersController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ConcertOrdersController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="372">
-              <caret line="32" column="17" lean-forward="true" selection-start-line="32" selection-start-column="14" selection-end-line="32" selection-end-column="17" />
-              <folding>
-                <element signature="e#40#79#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TicketCheckout.vue" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/resources/js/components/TicketCheckout.vue">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="527">
-              <caret line="68" column="35" lean-forward="false" selection-start-line="68" selection-start-column="35" selection-end-line="68" selection-end-column="35" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DatabaseSeeder.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/database/seeds/DatabaseSeeder.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="403">
-              <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="StripePaymentGateway.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Billing/StripePaymentGateway.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="806">
-              <caret line="26" column="18" lean-forward="false" selection-start-line="26" selection-start-column="18" selection-end-line="26" selection-end-column="18" />
+            <state relative-caret-position="565">
+              <caret line="62" column="30" lean-forward="true" selection-start-line="62" selection-start-column="30" selection-end-line="62" selection-end-column="30" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FakePaymentGatewayTest.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/tests/Unit/Billing/FakePaymentGatewayTest.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="100">
+              <caret line="19" column="63" lean-forward="true" selection-start-line="19" selection-start-column="63" selection-end-line="19" selection-end-column="63" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FakePaymentGateway.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Billing/FakePaymentGateway.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="627">
+              <caret line="36" column="43" lean-forward="true" selection-start-line="36" selection-start-column="43" selection-end-line="36" selection-end-column="43" />
               <folding />
             </state>
           </provider>
@@ -110,7 +88,6 @@
         <option value="$PROJECT_DIR$/resources/views/layout.blade.php" />
         <option value="$PROJECT_DIR$/resources/js/app.js" />
         <option value="$PROJECT_DIR$/routes/web.php" />
-        <option value="$PROJECT_DIR$/app/Billing/PaymentGateway.php" />
         <option value="$PROJECT_DIR$/app/Exceptions/Handler.php" />
         <option value="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php" />
         <option value="$PROJECT_DIR$/app/Billing/FailedPaymentException.php" />
@@ -119,7 +96,6 @@
         <option value="$PROJECT_DIR$/database/migrations/2019_02_25_085423_create_orders_table.php" />
         <option value="$USER_HOME$/.PhpStorm2017.1/phpstorm64.exe.vmoptions" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/app/Billing/FakePaymentGateway.php" />
         <option value="$PROJECT_DIR$/database/migrations/2019_02_25_102101_create_tickets_table.php" />
         <option value="$PROJECT_DIR$/database/factories/UserFactory.php" />
         <option value="$PROJECT_DIR$/tests/Feature/PurchaseTicketsTest.php" />
@@ -132,15 +108,17 @@
         <option value="$PROJECT_DIR$/tests/Unit/ReservationTest.php" />
         <option value="$PROJECT_DIR$/app/Reservation.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/ConcertOrdersController.php" />
-        <option value="$PROJECT_DIR$/tests/Unit/Billing/FakePaymentGatewayTest.php" />
         <option value="$PROJECT_DIR$/.env" />
-        <option value="$PROJECT_DIR$/tests/Unit/Billing/StripePaymentGatewayTest.php" />
         <option value="$PROJECT_DIR$/resources/views/concerts/show.blade.php" />
         <option value="$PROJECT_DIR$/resources/js/bootstrap.js" />
         <option value="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" />
         <option value="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" />
-        <option value="$PROJECT_DIR$/app/Billing/StripePaymentGateway.php" />
         <option value="$PROJECT_DIR$/resources/js/components/TicketCheckout.vue" />
+        <option value="$PROJECT_DIR$/tests/Unit/Billing/StripePaymentGatewayTest.php" />
+        <option value="$PROJECT_DIR$/app/Billing/StripePaymentGateway.php" />
+        <option value="$PROJECT_DIR$/app/Billing/FakePaymentGateway.php" />
+        <option value="$PROJECT_DIR$/app/Billing/PaymentGateway.php" />
+        <option value="$PROJECT_DIR$/tests/Unit/Billing/FakePaymentGatewayTest.php" />
       </list>
     </option>
   </component>
@@ -161,6 +139,7 @@
   <component name="NodeModulesDirectoryManager">
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
+  <component name="PhpWebServerValidation" path_to_validation_script="C:\laragon\www\ticketstorm\public" selected_validation_type="LOCAL" web_path_to_validation_script="http://127.0.0.1:8000/" />
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" interpreter_name="PHP" />
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
@@ -267,7 +246,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$PROJECT_DIR$/tests" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php.debug" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="nodejs_interpreter_path" value="C:/PROGRAM FILES/NODEJS/node" />
     <property name="JavaScriptPreferStrict" value="false" />
@@ -291,15 +270,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="PHPUnit.All">
-    <configuration default="false" name="OrderTest.can_generate_order_from_reservation" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="Tests\Unit\OrderTest" file="$PROJECT_DIR$/tests/Unit/OrderTest.php" method="can_generate_order_from_reservation" scope="Method" />
-      <method />
-    </configuration>
-    <configuration default="false" name="ReservationTest.can_create_order_from_reservation" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="Tests\Unit\ReservationTest" file="$PROJECT_DIR$/tests/Unit/ReservationTest.php" method="can_create_order_from_reservation" scope="Method" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="PHPUnit.FakePaymentGatewayTest.purchases_with_valid_token_are_successful">
     <configuration default="false" name="ReservationTest.can_create_order_by_completing_reservation" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
       <TestRunner class="Tests\Unit\ReservationTest" file="$PROJECT_DIR$/tests/Unit/ReservationTest.php" method="can_create_order_by_completing_reservation" scope="Method" />
       <method />
@@ -310,6 +281,14 @@
     </configuration>
     <configuration default="false" name="StripePaymentGatewayTest.purchases_with_invalid_token_fail" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
       <TestRunner class="Tests\Unit\StripePaymentGatewayTest" file="$PROJECT_DIR$/tests/Unit/Billing/StripePaymentGatewayTest.php" method="purchases_with_invalid_token_fail" scope="Method" />
+      <method />
+    </configuration>
+    <configuration default="false" name="FakePaymentGatewayTest.purchases_with_valid_token_are_successful" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Unit\FakePaymentGatewayTest" file="$PROJECT_DIR$/tests/Unit/Billing/FakePaymentGatewayTest.php" method="purchases_with_valid_token_are_successful" scope="Method" />
+      <method />
+    </configuration>
+    <configuration default="false" name="FakePaymentGatewayTest.can_fetch_charges_that_were_made_during_callback" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Unit\FakePaymentGatewayTest" file="$PROJECT_DIR$/tests/Unit/Billing/FakePaymentGatewayTest.php" method="can_fetch_charges_that_were_made_during_callback" scope="Method" />
       <method />
     </configuration>
     <configuration default="true" type="JavaScriptTestRunnerJest" factoryName="Jest">
@@ -357,19 +336,19 @@
     </configuration>
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="PHPUnit.All" />
-      <item index="1" class="java.lang.String" itemvalue="PHPUnit.OrderTest.can_generate_order_from_reservation" />
-      <item index="2" class="java.lang.String" itemvalue="PHPUnit.ReservationTest.can_create_order_from_reservation" />
-      <item index="3" class="java.lang.String" itemvalue="PHPUnit.ReservationTest.can_create_order_by_completing_reservation" />
-      <item index="4" class="java.lang.String" itemvalue="PHPUnit.StripePaymentGatewayTest.purchases_with_valid_token_are_successful" />
-      <item index="5" class="java.lang.String" itemvalue="PHPUnit.StripePaymentGatewayTest.purchases_with_invalid_token_fail" />
+      <item index="1" class="java.lang.String" itemvalue="PHPUnit.ReservationTest.can_create_order_by_completing_reservation" />
+      <item index="2" class="java.lang.String" itemvalue="PHPUnit.StripePaymentGatewayTest.purchases_with_valid_token_are_successful" />
+      <item index="3" class="java.lang.String" itemvalue="PHPUnit.StripePaymentGatewayTest.purchases_with_invalid_token_fail" />
+      <item index="4" class="java.lang.String" itemvalue="PHPUnit.FakePaymentGatewayTest.purchases_with_valid_token_are_successful" />
+      <item index="5" class="java.lang.String" itemvalue="PHPUnit.FakePaymentGatewayTest.can_fetch_charges_that_were_made_during_callback" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="PHPUnit.StripePaymentGatewayTest.purchases_with_invalid_token_fail" />
-        <item index="1" class="java.lang.String" itemvalue="PHPUnit.StripePaymentGatewayTest.purchases_with_valid_token_are_successful" />
-        <item index="2" class="java.lang.String" itemvalue="PHPUnit.ReservationTest.can_create_order_by_completing_reservation" />
-        <item index="3" class="java.lang.String" itemvalue="PHPUnit.OrderTest.can_generate_order_from_reservation" />
-        <item index="4" class="java.lang.String" itemvalue="PHPUnit.ReservationTest.can_create_order_from_reservation" />
+        <item index="0" class="java.lang.String" itemvalue="PHPUnit.FakePaymentGatewayTest.purchases_with_valid_token_are_successful" />
+        <item index="1" class="java.lang.String" itemvalue="PHPUnit.FakePaymentGatewayTest.can_fetch_charges_that_were_made_during_callback" />
+        <item index="2" class="java.lang.String" itemvalue="PHPUnit.StripePaymentGatewayTest.purchases_with_valid_token_are_successful" />
+        <item index="3" class="java.lang.String" itemvalue="PHPUnit.StripePaymentGatewayTest.purchases_with_invalid_token_fail" />
+        <item index="4" class="java.lang.String" itemvalue="PHPUnit.ReservationTest.can_create_order_by_completing_reservation" />
       </list>
     </recent_temporary>
   </component>
@@ -399,49 +378,49 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="All - 2019.03.21 at 18h 54m 30s.xml">
-      <configuration name="All" configurationId="PHPUnitRunConfigurationType" />
+    <history-entry file="FakePaymentGatewayTest_can_fetch_charges_that_were_made_during_callback - 2019.03.25 at 16h 13m 16s.xml">
+      <configuration name="FakePaymentGatewayTest.can_fetch_charges_that_were_made_during_callback" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="StripePaymentGatewayTest_purchases_with_invalid_token_fail - 2019.03.21 at 18h 45m 57s.xml">
-      <configuration name="StripePaymentGatewayTest.purchases_with_invalid_token_fail" configurationId="PHPUnitRunConfigurationType" />
+    <history-entry file="FakePaymentGatewayTest_can_fetch_charges_that_were_made_during_callback - 2019.03.25 at 16h 13m 44s.xml">
+      <configuration name="FakePaymentGatewayTest.can_fetch_charges_that_were_made_during_callback" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="StripePaymentGatewayTest_purchases_with_invalid_token_fail - 2019.03.21 at 18h 46m 53s.xml">
-      <configuration name="StripePaymentGatewayTest.purchases_with_invalid_token_fail" configurationId="PHPUnitRunConfigurationType" />
+    <history-entry file="FakePaymentGatewayTest_can_fetch_charges_that_were_made_during_callback - 2019.03.25 at 16h 14m 02s.xml">
+      <configuration name="FakePaymentGatewayTest.can_fetch_charges_that_were_made_during_callback" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="StripePaymentGatewayTest_purchases_with_invalid_token_fail - 2019.03.21 at 18h 47m 06s.xml">
-      <configuration name="StripePaymentGatewayTest.purchases_with_invalid_token_fail" configurationId="PHPUnitRunConfigurationType" />
+    <history-entry file="FakePaymentGatewayTest_can_fetch_charges_that_were_made_during_callback - 2019.03.25 at 16h 14m 36s.xml">
+      <configuration name="FakePaymentGatewayTest.can_fetch_charges_that_were_made_during_callback" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="StripePaymentGatewayTest_purchases_with_invalid_token_fail - 2019.03.21 at 18h 48m 36s.xml">
-      <configuration name="StripePaymentGatewayTest.purchases_with_invalid_token_fail" configurationId="PHPUnitRunConfigurationType" />
+    <history-entry file="FakePaymentGatewayTest_can_fetch_charges_that_were_made_during_callback - 2019.03.25 at 16h 14m 39s.xml">
+      <configuration name="FakePaymentGatewayTest.can_fetch_charges_that_were_made_during_callback" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="StripePaymentGatewayTest_purchases_with_invalid_token_fail - 2019.03.21 at 18h 48m 54s.xml">
-      <configuration name="StripePaymentGatewayTest.purchases_with_invalid_token_fail" configurationId="PHPUnitRunConfigurationType" />
+    <history-entry file="FakePaymentGatewayTest_can_fetch_charges_that_were_made_during_callback - 2019.03.25 at 16h 14m 52s.xml">
+      <configuration name="FakePaymentGatewayTest.can_fetch_charges_that_were_made_during_callback" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="StripePaymentGatewayTest_purchases_with_invalid_token_fail - 2019.03.21 at 18h 51m 00s.xml">
-      <configuration name="StripePaymentGatewayTest.purchases_with_invalid_token_fail" configurationId="PHPUnitRunConfigurationType" />
+    <history-entry file="FakePaymentGatewayTest_can_fetch_charges_that_were_made_during_callback - 2019.03.25 at 16h 15m 32s.xml">
+      <configuration name="FakePaymentGatewayTest.can_fetch_charges_that_were_made_during_callback" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="StripePaymentGatewayTest_purchases_with_invalid_token_fail - 2019.03.21 at 18h 51m 09s.xml">
-      <configuration name="StripePaymentGatewayTest.purchases_with_invalid_token_fail" configurationId="PHPUnitRunConfigurationType" />
+    <history-entry file="FakePaymentGatewayTest_can_fetch_charges_that_were_made_during_callback - 2019.03.25 at 16h 15m 41s.xml">
+      <configuration name="FakePaymentGatewayTest.can_fetch_charges_that_were_made_during_callback" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="StripePaymentGatewayTest_purchases_with_invalid_token_fail - 2019.03.21 at 18h 51m 25s.xml">
-      <configuration name="StripePaymentGatewayTest.purchases_with_invalid_token_fail" configurationId="PHPUnitRunConfigurationType" />
+    <history-entry file="FakePaymentGatewayTest_can_fetch_charges_that_were_made_during_callback - 2019.03.25 at 16h 20m 04s.xml">
+      <configuration name="FakePaymentGatewayTest.can_fetch_charges_that_were_made_during_callback" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="StripePaymentGatewayTest_purchases_with_invalid_token_fail - 2019.03.21 at 18h 54m 18s.xml">
-      <configuration name="StripePaymentGatewayTest.purchases_with_invalid_token_fail" configurationId="PHPUnitRunConfigurationType" />
+    <history-entry file="FakePaymentGatewayTest_purchases_with_valid_token_are_successful - 2019.03.25 at 16h 21m 32s.xml">
+      <configuration name="FakePaymentGatewayTest.purchases_with_valid_token_are_successful" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
     <option name="totallyTimeSpent" value="97068000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21421215" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21421215" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -740,29 +719,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Billing/PaymentGateway.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="124">
-          <caret line="4" column="10" lean-forward="false" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/Unit/Billing/FakePaymentGatewayTest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="651">
-          <caret line="36" column="5" lean-forward="true" selection-start-line="22" selection-start-column="4" selection-end-line="36" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Billing/FakePaymentGateway.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="534">
-          <caret line="38" column="5" lean-forward="true" selection-start-line="34" selection-start-column="8" selection-end-line="38" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/js/app.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="372">
@@ -808,12 +764,28 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/Unit/Billing/StripePaymentGatewayTest.php">
+    <entry file="file://$PROJECT_DIR$/database/seeds/DatabaseSeeder.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="463">
-          <caret line="67" column="25" lean-forward="false" selection-start-line="67" selection-start-column="25" selection-end-line="67" selection-end-column="25" />
+        <state relative-caret-position="403">
+          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/js/components/TicketCheckout.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="186">
+          <caret line="66" column="39" lean-forward="true" selection-start-line="66" selection-start-column="39" selection-end-line="66" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ConcertOrdersController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="124">
+          <caret line="31" column="28" lean-forward="true" selection-start-line="31" selection-start-column="28" selection-end-line="31" selection-end-column="28" />
           <folding>
-            <element signature="e#30#69#0#PHP" expanded="true" />
+            <element signature="e#40#79#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -826,36 +798,44 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/database/seeds/DatabaseSeeder.php">
+    <entry file="file://$PROJECT_DIR$/app/Billing/PaymentGateway.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="403">
-          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+        <state relative-caret-position="279">
+          <caret line="9" column="45" lean-forward="true" selection-start-line="9" selection-start-column="45" selection-end-line="9" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Billing/FakePaymentGateway.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="627">
+          <caret line="36" column="43" lean-forward="true" selection-start-line="36" selection-start-column="43" selection-end-line="36" selection-end-column="43" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Billing/StripePaymentGateway.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="806">
-          <caret line="26" column="18" lean-forward="false" selection-start-line="26" selection-start-column="18" selection-end-line="26" selection-end-column="18" />
+        <state relative-caret-position="565">
+          <caret line="62" column="30" lean-forward="true" selection-start-line="62" selection-start-column="30" selection-end-line="62" selection-end-column="30" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ConcertOrdersController.php">
+    <entry file="file://$PROJECT_DIR$/tests/Unit/Billing/StripePaymentGatewayTest.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="372">
-          <caret line="32" column="17" lean-forward="true" selection-start-line="32" selection-start-column="14" selection-end-line="32" selection-end-column="17" />
+        <state relative-caret-position="224">
+          <caret line="29" column="8" lean-forward="false" selection-start-line="29" selection-start-column="8" selection-end-line="39" selection-end-column="54" />
           <folding>
-            <element signature="e#40#79#0#PHP" expanded="true" />
+            <element signature="e#30#69#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/js/components/TicketCheckout.vue">
+    <entry file="file://$PROJECT_DIR$/tests/Unit/Billing/FakePaymentGatewayTest.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="68" column="35" lean-forward="false" selection-start-line="68" selection-start-column="35" selection-end-line="68" selection-end-column="35" />
+        <state relative-caret-position="100">
+          <caret line="19" column="63" lean-forward="true" selection-start-line="19" selection-start-column="63" selection-end-line="19" selection-end-column="63" />
           <folding />
         </state>
       </provider>
